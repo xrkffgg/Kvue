@@ -1,0 +1,29 @@
+// normalize
+@import './normalize.css';
+
+// element
+@import './ele.css';
+
+/* font */
+@font-face{
+  font-family:"Regular";
+  src:url('../font/Regular.ttf');
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 1px;
+  background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #adabab;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background:#394d63;
+}
+
+// common
+@import './common.scss';
