@@ -9,9 +9,11 @@
     </div>
 
     <div class="main">
-      <transition name="el-fade-in-linear">
-        <router-view/>
-      </transition>
+      <div class="view">
+        <transition name="el-fade-in-linear">
+          <router-view/>
+        </transition>
+      </div>
     </div>
   </div>
 </template>

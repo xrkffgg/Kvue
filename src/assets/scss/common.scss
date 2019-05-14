@@ -1,15 +1,18 @@
 // index
 $index--padding : 200px;
 $header--height : 60px;
-$siderbar--width : 180px;
-$main--padding : 16px;
+$siderbar--width : 200px;
 $bg--color : #fff;
+$main--color : #f1f4f5;
+$view--margin : 16px;
 
 #index {
   padding : 0 $index--padding 0 $index--padding;
   height: 100vh;
   position: relative;
   font-family: 'Regular';
+  border-right: 1px #eef2f8 solid;
+  border-left: 1px #eef2f8 solid;
 
   .header {
     width: calc(100% - #{$index--padding * 2});
@@ -17,6 +20,8 @@ $bg--color : #fff;
     z-index: 999;
     position: fixed;
     background-color: $bg--color;
+    border-right: 1px #eef2f8 solid;
+    border-left: 1px #eef2f8 solid;
   }
   
   .sidebar {
@@ -24,19 +29,27 @@ $bg--color : #fff;
     height: calc(100% - #{$header--height});
     width: $siderbar--width;
     z-index: 999;
-    background-color: $bg--color;
     position: fixed;
+    background-color: $bg--color;
+    border-right: 1px #eef2f8 solid;
+    border-left: 1px #eef2f8 solid;
   }
   
   .main {
     top : $header--height;
-    margin-left: $siderbar--width;
-    padding: $main--padding;
-    position: relative;
-    background-color: $bg--color;
+    margin-left: $siderbar--width + 1px;
+    width: calc(100% - #{$index--padding * 2} - #{$siderbar--width});
+    min-height: calc(100vh - #{$header--height});
+    position: absolute;
+    background-color: $main--color;
+    border-right: 1px #eef2f8 solid;
+    .view {
+      min-height: calc(100vh - #{$header--height} - #{$view--margin *2});
+      margin: $view--margin;
+      background-color: $bg--color;
+    }
   }
 }
-
 
 
 // header
@@ -49,19 +62,19 @@ $hover--color : #A4D3EE;
   border-bottom: 1px #eef2f8 solid;
   background-color: #fff;
   a {
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 
   .title {
     color: $title--color;
     .title1 {
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 2.0rem;
-    line-height: 4.0rem;
-    letter-spacing: 2px;
-    cursor: pointer;
+      margin-left: 20px;
+      font-weight: bold;
+      font-size: 2.0rem;
+      line-height: 4.0rem;
+      letter-spacing: 2px;
+      cursor: pointer;
       :hover {
         color: $hover--color;
       }
@@ -79,21 +92,72 @@ $hover--color : #A4D3EE;
   }
 
   .tab {
+    position: absolute;
     color: $title--color;
-    opacity: 0.5;
     font-size: 1.3rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     .tab1 {
-      padding-top: 1.6rem
+      padding-top: 1.6rem;
+      cursor: pointer;
+      :hover {
+        color: $hover--color;
+      }
     }
 
     .tab2 {
-      margin-left: 1rem;
+      margin-top: -22px;
+      margin-left: 5rem;
+      cursor: pointer;
+      :hover {
+        color: $hover--color;
+      }
+    }
+
+    .time {
+      font-size: 1rem;
+      margin-top: -18px;
+      margin-left: 11rem;
     }
 
   }
 
 }
 
+
+// siderbar
+$avatar--box--height : 180px;
+$avatar--circle--width : 90px;
+$avatar--circle--top : 50px;
+$avatar--font--height : 50px;
+$avatar--font--color :#8c8e8b;
+
+#siderbarcom {
+  border-top: 1px #eef2f8 solid;
+  .avatarbox {
+    width: 100%;
+    height: $avatar--box--height;
+    border-bottom: 1px #eef2f8 solid;
+    position: relative;
+    text-align: center;
+    .box-circle {
+      margin-top : $avatar--circle--top;
+      margin-left: calc((#{$siderbar--width} - #{$avatar--circle--width}) / 2);
+      width: $avatar--circle--width;
+      height: $avatar--circle--width;
+      border-radius: 50%;
+      box-shadow: 0 0 2px 3px hsla(0,0%,100%,.7), 0 0 10px 6px #69adf2;
+    }
+  
+    .box-font {
+      color :$avatar--font--color;
+      font-size: 1rem;
+      letter-spacing: 3px;
+      margin-top : $avatar--font--height;
+    }
+  }
+
+}
 
 
 

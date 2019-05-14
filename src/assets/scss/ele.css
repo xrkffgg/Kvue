@@ -1,0 +1,7 @@
+.el-menu {
+  border-right: 0px;
+}
+
+.el-submenu .el-menu-item {
+  min-width: auto;
+}
