@@ -1,4 +1,5 @@
 # Kvue
+[![kvue](https://img.shields.io/badge/Kvue-xrkffgg-brightgreen.svg?style=flat-square)](https://github.com/xrkffgg/kvue)
 [![GitHub last commit](https://img.shields.io/github/last-commit/xrkffgg/kvue.svg?color=red&style=flat-square)](https://github.com/xrkffgg/kvue/commits/master)
 [![GitHub stars](https://img.shields.io/github/stars/xrkffgg/kvue.svg?style=flat-square)](https://github.com/xrkffgg/kvue/stargazers)
 ![GitHub top language](https://img.shields.io/github/languages/top/xrkffgg/kvue.svg?color=orange&style=flat-square)

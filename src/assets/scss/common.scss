@@ -126,7 +126,7 @@ $hover--color : #A4D3EE;
 
 
 // siderbar
-$avatar--box--height : 180px;
+$avatar--box--height : 200px;
 $avatar--circle--width : 90px;
 $avatar--circle--top : 50px;
 $avatar--font--height : 50px;
@@ -147,8 +147,32 @@ $avatar--font--color :#8c8e8b;
       height: $avatar--circle--width;
       border-radius: 50%;
       box-shadow: 0 0 2px 3px hsla(0,0%,100%,.7), 0 0 10px 6px #69adf2;
+      flex: 0 0 auto;
+      background-image: url('../jpg/photo.png')
     }
-  
+
+    @-webkit-keyframes rotation{
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+    }
+
+    @keyframes rotation{
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+    
+    .Rotation{
+      animation: rotation 1s linear infinite;
+      -webkit-animation: rotation 1s linear infinite;
+      animation-play-state:paused;
+      -webkit-animation-play-state:paused; 
+    }
+
+    .Rotation:hover{
+      animation-play-state: running;
+      -webkit-animation-play-state: running;
+    }
+
     .box-font {
       color :$avatar--font--color;
       font-size: 1rem;

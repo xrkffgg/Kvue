@@ -1,7 +1,7 @@
 <template>
   <div id="siderbarcom">
     <div class="avatarbox">
-      <div class="box-circle">
+      <div id="avatar" class="Rotation box-circle">
 
       </div>
       <div class="box-font">
@@ -38,6 +38,15 @@
 </template>
 
 <script>
+  var funavatar = () =>{
+    var avatar = document.getElementById('avatar')
+    avatar.onmouseover = () =>{
+      
+    }
+  }
+
+  funavatar()
+
   import {ROUTES} from '../router.js'
   export default {
     name : 'siderbarcom',
