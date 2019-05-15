@@ -147,8 +147,6 @@ $avatar--font--color :#8c8e8b;
       height: $avatar--circle--width;
       border-radius: 50%;
       box-shadow: 0 0 2px 3px hsla(0,0%,100%,.7), 0 0 10px 6px #69adf2;
-      flex: 0 0 auto;
-      background-image: url('../jpg/photo.png')
     }
 
     @-webkit-keyframes rotation{
@@ -161,16 +159,30 @@ $avatar--font--color :#8c8e8b;
       to {transform: rotate(360deg);}
     }
     
-    .Rotation{
-      animation: rotation 1s linear infinite;
-      -webkit-animation: rotation 1s linear infinite;
-      animation-play-state:paused;
-      -webkit-animation-play-state:paused; 
+    .rotation{
+      // animation: rotation 1s ease-in infinite;
+      // -webkit-animation: rotation 1s ease-in infinite;
+      // animation-play-state:paused;
+      // -webkit-animation-play-state:paused; 
     }
 
-    .Rotation:hover{
-      animation-play-state: running;
-      -webkit-animation-play-state: running;
+    .fill{
+      width: $avatar--circle--width;
+      height: $avatar--circle--width;
+      position: relative;
+      flex: 0 0 auto;
+      transform : rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      border-radius: 50%;
+      background-image: url('../jpg/photo.png');
+    }
+
+    .fill:hover{
+      // animation-play-state: running;
+      // -webkit-animation-play-state: running;
+      -webkit-transform: rotate(666turn);
+      transform: rotate(666turn);
+      transition: all 59s cubic-bezier(.34, 0, .84, 1) 1s;
     }
 
     .box-font {

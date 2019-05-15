@@ -38,7 +38,7 @@ export const ROUTES = [
           {
             path : '001',
             name : 'css001',
-            component : () => import('./components/css/001.vue'),
+            component : () => import('./components/cssCom/001.vue'),
             side_id : getid(),
             side_name : '字体显示',
           }

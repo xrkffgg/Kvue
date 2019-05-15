@@ -1,8 +1,8 @@
 <template>
   <div id="siderbarcom">
     <div class="avatarbox">
-      <div id="avatar" class="Rotation box-circle">
-
+      <div id="avatarId" class="box-circle rotation">
+        <div id="fillId" class="fill"></div>
       </div>
       <div class="box-font">
         xrkffgg
@@ -38,14 +38,15 @@
 </template>
 
 <script>
-  var funavatar = () =>{
-    var avatar = document.getElementById('avatar')
-    avatar.onmouseover = () =>{
-      
-    }
-  }
+  // var funavatar = function(){
+  //   var avatar = document.getElementById('avatarId')
+  //   console.log(avatar)
+  //   avatar.onmouseover = function(){
+  //     avatar.style.animationPlayState = 'running'
+  //   }
+  // }
 
-  funavatar()
+  // funavatar()
 
   import {ROUTES} from '../router.js'
   export default {
@@ -67,7 +68,7 @@
     },  
 
     mounted(){
-
+      // this.onAvatar()
     },
 
     data() {
@@ -93,6 +94,25 @@
       },
       goto(it){
         this.$router.replace({name : it.name})
+      },
+
+      // onAvatar(){
+      //   var ad = document.getElementById('avatarId')
+      //   var fd = document.getElementById('fillId')
+        
+      //   ad.onmouseover = () =>{
+      //     ad.style.animationPlayState = 'running'
+
+      //   }
+      //   ad.onmouseout = () =>{
+      //     // ad.style.animation = 'rotation .1s linear infinite'
+      //     ad.style.animationPlayState = 'paused'
+      //   }
+      // },
+
+
+      gettime(i){
+        let y = 10 - 0.099* i * i 
       },
     }
   }
