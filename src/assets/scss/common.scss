@@ -6,14 +6,19 @@ $bg--color : #fff;
 $main--color : #f1f4f5;
 $view--margin : 16px;
 
+.num {
+  font-family: 'Roboto-Thin';
+  font-weight: bolder;
+}
+
 #index {
   padding : 0 $index--padding 0 $index--padding;
   height: 100vh;
   position: relative;
-  font-family: 'Regular';
+  font-family: 'SourceHanSans-Regular';
   border-right: 1px #eef2f8 solid;
   border-left: 1px #eef2f8 solid;
-
+  cursor: default;
   .header {
     width: calc(100% - #{$index--padding * 2});
     height: $header--height;
@@ -70,7 +75,7 @@ $hover--color : #A4D3EE;
     color: $title--color;
     .title1 {
       margin-left: 20px;
-      font-weight: bold;
+      font-weight: bolder !important;
       font-size: 2.0rem;
       line-height: 4.0rem;
       letter-spacing: 2px;
@@ -92,32 +97,30 @@ $hover--color : #A4D3EE;
   }
 
   .tab {
-    position: absolute;
     color: $title--color;
     font-size: 1.3rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    .tab1 {
-      padding-top: 1.6rem;
-      cursor: pointer;
-      :hover {
-        color: $hover--color;
-      }
+
+    li {
+      list-style: none;
+      float: left;
+      position: relative;
     }
 
-    .tab2 {
-      margin-top: -22px;
-      margin-left: 5rem;
-      cursor: pointer;
-      :hover {
-        color: $hover--color;
-      }
+    a{
+      padding: 0 20px !important;
     }
 
-    .time {
-      font-size: 1rem;
-      margin-top: -18px;
-      margin-left: 11rem;
+    .headmenu {
+      cursor: pointer;
+    }
+    .headmenu:hover {
+      color: $hover--color !important;
+    }
+
+    .headtime {
+      font-size: 1rem !important;
     }
 
   }
@@ -128,7 +131,7 @@ $hover--color : #A4D3EE;
 // siderbar
 $avatar--box--height : 200px;
 $avatar--circle--width : 90px;
-$avatar--circle--top : 50px;
+$avatar--circle--top : 40px;
 $avatar--font--height : 50px;
 $avatar--font--color :#8c8e8b;
 
@@ -148,46 +151,26 @@ $avatar--font--color :#8c8e8b;
       border-radius: 50%;
       box-shadow: 0 0 2px 3px hsla(0,0%,100%,.7), 0 0 10px 6px #69adf2;
     }
-
-    @-webkit-keyframes rotation{
-      from {-webkit-transform: rotate(0deg);}
-      to {-webkit-transform: rotate(360deg);}
-    }
-
-    @keyframes rotation{
-      from {transform: rotate(0deg);}
-      to {transform: rotate(360deg);}
-    }
     
-    .rotation{
-      // animation: rotation 1s ease-in infinite;
-      // -webkit-animation: rotation 1s ease-in infinite;
-      // animation-play-state:paused;
-      // -webkit-animation-play-state:paused; 
-    }
-
     .fill{
       width: $avatar--circle--width;
       height: $avatar--circle--width;
       position: relative;
       flex: 0 0 auto;
-      transform : rotate(360deg);
-      -webkit-transform: rotate(360deg);
       border-radius: 50%;
       background-image: url('../jpg/photo.png');
     }
 
     .fill:hover{
-      // animation-play-state: running;
-      // -webkit-animation-play-state: running;
-      -webkit-transform: rotate(666turn);
       transform: rotate(666turn);
-      transition: all 59s cubic-bezier(.34, 0, .84, 1) 1s;
+      -webkit-transform: rotate(666turn);
+      transition: all 59s cubic-bezier(.34, 0, .84, 1) .5s;
+      -webkit-transition: all 59s cubic-bezier(.34, 0, .84, 1) .5s;
     }
 
     .box-font {
       color :$avatar--font--color;
-      font-size: 1rem;
+      font-size: 1.1rem;
       letter-spacing: 3px;
       margin-top : $avatar--font--height;
     }
@@ -196,4 +179,26 @@ $avatar--font--color :#8c8e8b;
 }
 
 
+// main title content
+$main--title--color : #3d3c3d;
+$main--title--time--color : #999;
+.main-title {
+  padding-top: 2rem;
+  color: $main--title--color;
+  text-align: center;
+  text-shadow: #4e4d4d 0 0 6px;
+  font-size: 1.9rem;
+  letter-spacing: 4px;
+}
 
+.main-title-time {
+  color: $main--title--time--color;
+  font-size: .8rem;
+  line-height: 2rem;
+  text-align: center;
+  text-shadow: #cacaca 0 0 1px;
+}
+
+.main-content {
+  padding: 40px 20px 20px 20px;
+}

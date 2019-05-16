@@ -1,13 +1,13 @@
 <template>
-  <div id="xxx">
-    001
+  <div id="css001">
+    css001
   </div>
 </template>
 
 <script>
 
   export default {
-    name : 'xxx',
+    name : 'css001',
     mixins : [],
     components: {
 

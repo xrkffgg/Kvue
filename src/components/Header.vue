@@ -1,28 +1,29 @@
 <template>
   <div id="headercom">
     <el-row :gutter="10">
-      <el-col :md="{span: 8,offset: 1}" :lg="{span: 5,offset: 1}" :xl="{span: 3,offset: 1}">
+      <el-col :lg="{span: 7,offset: 1}" :xl="{span: 3,offset: 1}">
         <div class="title">
-          <div class="title1" @click="doGoHome">
+          <div class="title1 num" @click="doGoHome">
             <a>Kvue</a>
           </div>
-          <div class="title2" @click="doGoGit">
+          <div class="title2 num" @click="doGoGit">
             <a>by xrkffgg</a>
           </div>
         </div>
       </el-col>
-      <el-col 
-        :md="{span: 8,offset: 1}" :lg="{span: 5,offset: 8}" :xl="{span: 4,offset: 14}">
+      <el-col :lg="{span: 14,offset: 2}" :xl="{span: 8,offset: 12}">
         <div class="tab">
-          <div class="tab1" @click="doGoHome">
-            <a>首 页</a>
-          </div>
-          <div class="tab2" @click="doGoGit">
-            <a>Github</a>
-          </div>
-          <div class="time">
-            {{ nowDate }}
-          </div>
+          <ul>
+            <li>
+              <a class="headmenu" @click="doGoHome">首 页</a>
+            </li>
+            <li>
+              <a class="headmenu num" @click="doGoGit">Github</a>
+            </li>
+            <li>
+              <a class="headtime mun">{{ nowDate }}</a>
+            </li>
+          </ul>
         </div>
       </el-col>
     </el-row>

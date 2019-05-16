@@ -6,13 +6,18 @@
 
 /* font */
 @font-face{
-  font-family:"Regular";
-  src:url('../font/Regular.ttf');
+  font-family:"Roboto-Thin";
+  src:url('../font/Roboto-Thin.ttf');
+}
+
+@font-face{
+  font-family:"SourceHanSans-Regular";
+  src:url('../font/SourceHanSans-Regular.otf');
 }
 
 /* scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
   height: 1px;
   background-color:transparent;
 }
@@ -22,7 +27,13 @@
 }
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background:#394d63;
+  background:rgba(0,0,0,.1);
+}
+
+::selection{
+  color: #fff;
+  background-color: #46484b;
+  text-shadow: #bbbaba 0 0 1px, #fffffb 0 0 1px, #fffffb 0 0 2px;
 }
 
 // common
