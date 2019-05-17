@@ -40,7 +40,7 @@
     </el-menu>
 
     <div class="sidefooter">
-      <div class="fotter-follow num">Follow me at</div>
+      <div class="fotter-follow num">Follow <div style="color:red;display:inline;">me</div> at</div>
       <el-row type="flex" justify="space-around" style="margin-top:10px;">
         <el-col :span="6" :offset="2">
           <div class="follow follow-git" @click="doGoGitUser"></div>

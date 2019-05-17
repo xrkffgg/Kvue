@@ -214,7 +214,9 @@ $sidebar--footer--height : 90px;
     height: $sidebar--footer--height;
     bottom: 0;
     .fotter-follow {
-      color: #000000 !important;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      color: #000000 ;
       text-shadow: #000000 0 0 1px;
       padding-top: 20px;
       padding-left: 20px;

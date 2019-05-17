@@ -22,9 +22,9 @@
 
     <div class="cardsbox">
       <div class="cards">
-        <div class="sort">
+        <!-- <div class="sort">
           <i class="el-icon-tickets"></i> 目前共有<div class="num" style="display:inline;">2</div> 分类 
-        </div>
+        </div> -->
       </div>
       
       
