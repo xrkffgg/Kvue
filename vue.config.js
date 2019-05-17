@@ -1,3 +1,4 @@
 module.exports = {
-  outputDir: 'kvue'
+  outputDir: 'kvue',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 }

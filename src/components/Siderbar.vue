@@ -4,14 +4,18 @@
       <div id="avatarId" class="box-circle">
         <div id="fillId" class="fill"></div>
       </div>
-      <div class="box-font num">
+      <div class="box-font num" @click="doGoGitUser">
         xrkffgg
+      </div>
+      <div class="box-sign num">
+        Tenacity & Brave & Love
       </div>
     </div>
 
     <el-menu
+      :default-active="$store.state.sideBarName"
       unique-opened
-      class="el-menu-vertical-demo">
+      class="el-menu-vertical-demo sidemenu">
       <template v-for="list in lists">
         <el-submenu :index="list.name" :key="list.side_id" v-if="list.children && list.children.length > 0">
           <template slot="title">
@@ -34,13 +38,31 @@
         </el-menu-item>
       </template>
     </el-menu>
+
+    <div class="sidefooter">
+      <div class="fotter-follow num">Follow me at</div>
+      <el-row type="flex" justify="space-around" style="margin-top:10px;">
+        <el-col :span="6" :offset="2">
+          <div class="follow follow-git" @click="doGoGitUser"></div>
+        </el-col>
+        <el-col :span="6">
+          <div class="follow follow-jue" @click="doGoJuejin">掘</div>
+        </el-col>
+        <el-col :span="6">
+          <div class="follow follow-jian" @click="doGoJianshu">简</div>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
 <script>
   import {ROUTES} from '../router.js'
+  import mixinCommon from '../mixins/common'
+
   export default {
     name : 'siderbarcom',
+    mixins: [mixinCommon],
     components: {
 
     },
@@ -83,7 +105,6 @@
         this.lists = ROUTES[0].children
       },
       goto(it){
-        console.log(it.name)
         this.$router.replace({name : it.name})
       },
 

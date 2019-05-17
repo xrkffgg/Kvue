@@ -38,3 +38,7 @@
 
 // common
 @import './common.scss';
+
+*::after{
+  clear: both;
+}

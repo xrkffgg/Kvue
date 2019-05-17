@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from './store'
 
 Vue.use(Router)
 
@@ -90,8 +91,10 @@ const router =  new Router({
 
 router.beforeEach((to,from,next) =>{
   if(to.name == null){
+    store.state.sideBarName = 'home'
     return next({name : 'home'})
   }
+  store.state.sideBarName = to.name
   next()
 })
 

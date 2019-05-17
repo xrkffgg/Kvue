@@ -6,7 +6,7 @@
           <div class="title1 num" @click="doGoHome">
             <a>Kvue</a>
           </div>
-          <div class="title2 num" @click="doGoGit">
+          <div class="title2 num" @click="doGoGitUser">
             <a>by xrkffgg</a>
           </div>
         </div>
@@ -33,8 +33,11 @@
 
 <script>
   import mixinDateModule from '../mixins/date-module.js' 
+  import mixinCommon from '../mixins/common'
+  import store from '../store'
+
   export default {
-    mixins: [mixinDateModule],
+    mixins: [mixinDateModule,mixinCommon],
     name : 'headercom',
     components: {
 
@@ -85,10 +88,6 @@
     methods: {
       doGoHome(){
         this.$router.push({path : '/'})
-      },
-
-      doGoGit(){
-        window.open('https://github.com/xrkffgg/kvue')
       },
     }
   }
