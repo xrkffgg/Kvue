@@ -5,7 +5,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/xrkffgg/kvue.svg?color=orange&style=flat-square)
 [![Badge](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square)](https://996.icu/#/zh_CN)
 [![GitHub](https://img.shields.io/github/license/xrkffgg/kvue.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/LICENSE)
-
+[![Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/src/assets/jpg/vx.png)
+[![Badge](https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/src/assets/jpg/zfb.png)
 
 
 
@@ -23,10 +24,10 @@ npm run serve
 ## 说明 📃
 
 1. 低版本浏览器不支持！
-2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`
+2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`，首次字体加载略慢，见谅！
 3. 由于目前技术和时间有限，未添加手机端适配，建议分辨率1920×1080
 4. 波纹效果：http://fian.my.id/Waves/
-5. 有任何建议或指导请点击 [**【issues】**](https://github.com/xrkffgg/kvue/issues/new)
+5. 有任何建议或指导请点击 [【issues】](https://github.com/xrkffgg/kvue/issues/new)
 
 
 ## 声明 📖

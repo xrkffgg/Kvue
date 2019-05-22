@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     sideBarName : '',
+    copy_year : '2019'
   },
   mutations: {
 

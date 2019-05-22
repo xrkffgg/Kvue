@@ -21,7 +21,7 @@
               <a class="headmenu num" @click="doGoGit">Github</a>
             </li>
             <li>
-              <a class="headtime mun">{{ nowDate }}</a>
+              <a class="headtime num">{{ nowDate }}</a>
             </li>
           </ul>
         </div>

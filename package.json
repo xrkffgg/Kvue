@@ -9,6 +9,7 @@
   "dependencies": {
     "echarts": "^4.2.1",
     "element-ui": "^2.8.2",
+    "fontfaceobserver": "^2.1.0",
     "vue": "^2.6.10",
     "vue-baidu-map": "^0.21.20",
     "vue-router": "^3.0.3",
@@ -29,5 +30,14 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "author": {
+    "name": "xrkffgg",
+    "email": "xrkffgg@vip.qq.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/xrkffgg/kvue.git",
+    "type": "git"
+  }
 }

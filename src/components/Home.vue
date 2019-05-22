@@ -1,37 +1,50 @@
 <template>
-  <div id="home" >
+  <div id="home">
     <div class="intitle">
       <div class="ti1">Kvue</div>
-      <div class="ti2">Keep Coding With Vue</div>
+      <div class="ti2">Keep Coding By HTML & CSS & JS</div>
     </div>
     <div class="tabs">
-      <div 
-        v-for="ima in imas" 
+      <div
+        v-for="ima in imas"
         :key="ima.id"
         @click="gotab(ima.url)"
         class="onetab">
-        <img :src="ima.src" />
+        <img :id="ima.id" :src="ima.src" />
       </div>
       <div class="onetab" @click="doo('vx')">
-        <img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square">
+        <img id="ima9" src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square">
       </div>
       <div class="onetab" @click="doo('zfb')">
-        <img src="https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square">
+        <img id="ima10" src="https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square">
       </div>
     </div>
 
     <div class="cardsbox">
       <div class="cards">
-        <!-- <div class="sort">
-          <i class="el-icon-tickets"></i> 目前共有<div class="num" style="display:inline;">2</div> 分类 
-        </div> -->
+        <!-- <iframe src="https://www.baidu.com/" width="100%" height="100%" scrolling="no" frameborder="0"></iframe> -->
       </div>
-      
-      
-
     </div>
 
+    <div class="homeaboutbox">
+      <div class="aboutcon">
+        <div class="card">
+          <div class="cardfont" @click="showhis">成长史</div>
+        </div>
+        <div class="card">
+          <div class="cardfont" @click="showme">关于我</div>
+        </div>
+      </div>
+      <div class="copybox">
+        <div class="num copy">
+          ©&nbsp;&nbsp;{{$store.state.copy_year}}&nbsp;&nbsp;<a class="copyname" @click="doGoGit">xrkffgg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- vx/zfb  -->
     <el-dialog
+      id="love"
       :title="ifvx? '💖微 信💖': '💖支付宝💖'"
       :show-close="false"
       :visible.sync="dialogVisible"
@@ -45,16 +58,15 @@
       </div>
     </el-dialog>
 
-    <!-- <div class="copy">
-      © 2019 xrkffgg
-    </div> -->
   </div>
 </template>
 
 <script>
+  import mixinCommon from '../mixins/common'
 
   export default {
     name : 'home',
+    mixins: [mixinCommon],
     components: {
 
     },
@@ -64,7 +76,7 @@
     ],
 
     created(){
-
+      
     },
 
     watch:{
@@ -83,34 +95,44 @@
         //页面使用数据
         imas : [
           {
-            id: 1,
+            id: 'ima1',
             src : 'https://img.shields.io/badge/Kvue-xrkffgg-brightgreen.svg?style=flat-square',
             url : 'https://github.com/xrkffgg/kvue'
           },
           {
-            id: 2,
+            id: 'ima2',
             src : 'https://img.shields.io/github/last-commit/xrkffgg/kvue.svg?color=red&style=flat-square',
             url : 'https://github.com/xrkffgg/kvue/commits'
           },
           {
-            id: 3,
+            id: 'ima3',
             src : 'https://img.shields.io/github/stars/xrkffgg/kvue.svg?style=flat-square',
             url : 'https://github.com/xrkffgg/kvue/stargazers'
           },
           {
-            id: 4,
+            id: 'ima4',
             src : 'https://img.shields.io/github/languages/top/xrkffgg/kvue.svg?color=orange&style=flat-square',
             url : 'https://github.com/xrkffgg/kvue'
           },
           {
-            id: 5,
+            id: 'ima5',
             src : 'https://img.shields.io/github/license/xrkffgg/kvue.svg?style=flat-square',
             url : 'https://github.com/xrkffgg/kvue/blob/master/LICENSE'
           },
           {
-            id: 6,
+            id: 'ima6',
             src : 'https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square',
             url : 'https://996.icu/#/zh_CN'
+          },
+          {
+            id: 'ima7',
+            src : 'https://img.shields.io/badge/%E2%9D%A4-%E6%8E%98%20%E9%87%91-blue.svg?style=flat-square',
+            url : 'https://juejin.im/user/59c369496fb9a00a4843a3e2'
+          },
+          {
+            id: 'ima8',
+            src : 'https://img.shields.io/badge/%E2%9D%A4-%E7%AE%80%20%E4%B9%A6-orange.svg?style=flat-square',
+            url : 'https://www.jianshu.com/u/4ca4daac5890'
           },
         ]
         //码表
@@ -133,23 +155,31 @@
         i == 'vx'? this.ifvx = true :this.ifvx = false
         this.dialogVisible = true
       },
+
+      showhis(){
+
+      },
+
+      showme(){
+
+      },
     }
   }
 </script>
 
 <style>
-  #home .dialogClass {
+  #love .dialogClass {
     width: 300px;
     height: 300px;
   }
 
-  #home .el-dialog__title {
+  #love .el-dialog__title {
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 2rem;
   }
 
-  #home .el-dialog{
+  #love .el-dialog{
     box-shadow: 9px 9px 5px 5px #446679;
     -webkit-box-shadow: 9px 9px 5px 5px #446679;
   }
