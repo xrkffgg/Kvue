@@ -11,7 +11,7 @@
           </div>
         </div>
       </el-col>
-      <el-col :lg="{span: 14,offset: 2}" :xl="{span: 8,offset: 12}">
+      <el-col :lg="{span: 14,offset: 2}" :xl="{span: 7,offset: 13}">
         <div class="tab">
           <ul>
             <li>

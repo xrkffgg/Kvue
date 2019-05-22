@@ -105,10 +105,10 @@ $hover--color : #A4D3EE;
     font-size: 1.3rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-
+    text-align: left;
     li {
       list-style: none;
-      float: left;
+      float: right;
       position: relative;
     }
 
