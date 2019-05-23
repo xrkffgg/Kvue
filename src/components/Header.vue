@@ -1,33 +1,19 @@
 <template>
   <div id="headercom">
-    <el-row :gutter="10">
-      <el-col :lg="{span: 7,offset: 1}" :xl="{span: 3,offset: 1}">
-        <div class="title">
-          <div class="title1 num" @click="doGoHome">
-            <a>Kvue</a>
-          </div>
-          <div class="title2 num" @click="doGoGitUser">
-            <a>by xrkffgg</a>
-          </div>
-        </div>
-      </el-col>
-      <el-col :lg="{span: 14,offset: 2}" :xl="{span: 7,offset: 13}">
-        <div class="tab">
-          <ul>
-            <li>
-              <a class="headmenu" @click="doGoHome">首 页</a>
-            </li>
-            <li>
-              <a class="headmenu num" @click="doGoGit">Github</a>
-            </li>
-            <li>
-              <a class="headtime num">{{ nowDate }}</a>
-            </li>
-          </ul>
-        </div>
-      </el-col>
-    </el-row>
-
+    <div class="title inline">
+      <div class="title1 num inline" @click="doGoHome">
+        <a>Kvue</a>
+      </div>
+      <div class="title2 num inline" @click="doGoGitUser">
+        <a>by xrkffgg</a>
+      </div>
+    </div>
+    
+    <div class="tab inline">
+      <a class="headmenu inline" @click="doGoHome">首 页</a>
+      <a class="headmenu num inline" @click="doGoGit">Github</a>
+      <a class="headtime num inline">{{ nowDate }}</a>
+    </div>
   </div>
 </template>
 

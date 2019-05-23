@@ -73,6 +73,10 @@ $hover--color : #A4D3EE;
     transition: all 0.3s;
   }
 
+  .inline {
+    display: inline;
+  }
+
   .title {
     color: $title--color;
     .title1 {
@@ -89,8 +93,7 @@ $hover--color : #A4D3EE;
     }
   
     .title2 {
-      margin-top: -33px;
-      margin-left: 112px;
+      margin-left: 20px;
       font-size: 0.8rem;
       text-shadow: $title--color 0 0 1px;
       cursor: pointer;
@@ -101,19 +104,14 @@ $hover--color : #A4D3EE;
   }
 
   .tab {
+    margin-left: calc(100% - 540px);
     color: $title--color;
+    position: relative;
     font-size: 1.3rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    text-align: left;
-    li {
-      list-style: none;
-      float: right;
-      position: relative;
-    }
-
     a{
-      padding: 0 20px !important;
+      padding: 0 10px !important;
     }
 
     .headmenu {
@@ -328,9 +326,214 @@ $home--card--block--width : 20px;
       -webkit-box-shadow: inset 8px 8px 8px 1px #90a4af, inset -8px -8px 8px 1px #90a4af;
       border-radius: 25px;
       -webkit-border-radius: 25px;
-      .sort{
-        display: inline;
+      .iframebox{
+        position: relative;
+        padding: 20px 20px 0 20px;
+        height: calc(100% - 40px);
       }
+    }
+  }
+
+  .container {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    font-size: 18px;
+    color: #4a4b4c;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    .shape {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 1px;
+    }
+    .shape1{
+      left: 0;
+      background-color: #1989fa;
+    }
+    .shape2{
+      right: 0;
+      background-color: #8BC34A;
+    }
+    .shape3{
+      bottom: 0;
+      background-color: #FFB74D;
+    }
+    .shape4{
+      bottom: 0;
+      right: 0;
+      background-color: #F44336;
+    }
+  }
+
+  .animation-5 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .animation-5 .shape1 {
+    animation: animation5shape1 2s ease 0s infinite reverse;
+  }
+  
+  @-webkit-keyframes animation5shape1 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(0, 20px);
+              transform: translate(0, 20px);
+    }
+    50% {
+      -webkit-transform: translate(20px, 20px);
+              transform: translate(20px, 20px);
+    }
+    75% {
+      -webkit-transform: translate(20px, 0);
+              transform: translate(20px, 0);
+    }
+  }
+  
+  @keyframes animation5shape1 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(0, 20px);
+              transform: translate(0, 20px);
+    }
+    50% {
+      -webkit-transform: translate(20px, 20px);
+              transform: translate(20px, 20px);
+    }
+    75% {
+      -webkit-transform: translate(20px, 0);
+              transform: translate(20px, 0);
+    }
+  }
+  .animation-5 .shape2 {
+    animation: animation5shape2 2s ease 0s infinite reverse;
+  }
+  
+  @-webkit-keyframes animation5shape2 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(-20px, 0);
+      transform: translate(-20px, 0);
+    }
+    50% {
+      -webkit-transform: translate(-20px, 20px);
+      transform: translate(-20px, 20px);
+    }
+    75% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+    }
+  }
+  
+  @keyframes animation5shape2 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(-20px, 0);
+      transform: translate(-20px, 0);
+    }
+    50% {
+      -webkit-transform: translate(-20px, 20px);
+      transform: translate(-20px, 20px);
+    }
+    75% {
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+    }
+  }
+  .animation-5 .shape3 {
+    animation: animation5shape3 2s ease 0s infinite reverse;
+  }
+  
+  @-webkit-keyframes animation5shape3 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(20px, 0);
+      transform: translate(20px, 0);
+    }
+    50% {
+      -webkit-transform: translate(20px, -20px);
+      transform: translate(20px, -20px);
+    }
+    75% {
+      -webkit-transform: translate(0, -20px);
+      transform: translate(0, -20px);
+    }
+  }
+  
+  @keyframes animation5shape3 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(20px, 0);
+              transform: translate(20px, 0);
+    }
+    50% {
+      -webkit-transform: translate(20px, -20px);
+              transform: translate(20px, -20px);
+    }
+    75% {
+      -webkit-transform: translate(0, -20px);
+              transform: translate(0, -20px);
+    }
+  }
+  .animation-5 .shape4 {
+    animation: animation5shape4 2s ease 0s infinite reverse;
+  }
+  
+  @-webkit-keyframes animation5shape4 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(0, -20px);
+              transform: translate(0, -20px);
+    }
+    50% {
+      -webkit-transform: translate(-20px, -20px);
+              transform: translate(-20px, -20px);
+    }
+    75% {
+      -webkit-transform: translate(-20px, 0);
+              transform: translate(-20px, 0);
+    }
+  }
+  
+  @keyframes animation5shape4 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    25% {
+      -webkit-transform: translate(0, -20px);
+              transform: translate(0, -20px);
+    }
+    50% {
+      -webkit-transform: translate(-20px, -20px);
+              transform: translate(-20px, -20px);
+    }
+    75% {
+      -webkit-transform: translate(-20px, 0);
+              transform: translate(-20px, 0);
     }
   }
 
@@ -341,14 +544,14 @@ $home--card--block--width : 20px;
     height: calc(100vh - #{$header--height} - #{$view--margin *2} - #{$home--intitle--height} - #{$home--tabs--height} - #{$home--tab--margin--top});
     .aboutcon{
       position: relative;
-      padding-left:20px;
-      padding-top:50px;
+      top : 2%;
     }
     .card{
-      margin-top: 50px;
+      margin:0 auto;
+      margin-top: 35px;
       text-align: center;
       border-radius: 30px;
-      width: 200px;
+      width: 150px;
       height: 40px;
       line-height: 40px;
       -webkit-transition: all 0.3s;
@@ -358,7 +561,7 @@ $home--card--block--width : 20px;
       box-shadow: #606266 3px 3px 8px 1px, #c0c4cc -1px 8px 8px 1px;
       cursor: pointer;
       .cardfont {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         letter-spacing: 10px;
         color : #fff;
       }

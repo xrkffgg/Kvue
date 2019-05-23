@@ -22,17 +22,37 @@
 
     <div class="cardsbox">
       <div class="cards">
-        <!-- <iframe src="/#/Css/001" width="100%" height="100%" scrolling="no" frameborder="0"></iframe> -->
+        <div class="iframebox">
+          <iframe
+            id="3dcube"
+            v-show="!loading"
+            src="https://it-xrk.github.io/" 
+            name="3dcube"
+            width="100%"
+            height="100%"
+            scrolling="no"
+            frameborder="0">
+          </iframe>
+          <div class="container animation-5" v-show="loading">
+            <div class="shape shape1">加</div>
+            <div class="shape shape2">载</div>
+            <div class="shape shape3">中</div>
+            <div class="shape shape4"><i class="el-icon-loading"></i></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="homeaboutbox">
       <div class="aboutcon">
         <div class="card">
-          <div class="cardfont" @click="showhis">成长史</div>
+          <div class="cardfont" @click="showhis">版本记录</div>
         </div>
         <div class="card">
-          <div class="cardfont" @click="showme">关于我</div>
+          <div class="cardfont" @click="doGoGitIssues">意见建议</div>
+        </div>
+        <div class="card">
+          <div class="cardfont" @click="showme">关于作者</div>
         </div>
       </div>
       <div class="copybox">
@@ -49,7 +69,7 @@
       :show-close="false"
       :visible.sync="dialogVisible"
       center
-      custom-class="dialogClass">
+      custom-class="dialogClassjmg">
       <div class="diaimg" v-if="ifvx">
         <img src="../assets/jpg/vx.png"/>
       </div>
@@ -58,6 +78,64 @@
       </div>
     </el-dialog>
 
+    <!-- 版本记录 -->
+    <el-dialog
+      id="his"
+      title="版本记录"
+      :show-close="false"
+      :visible.sync="dialoghis"
+      center>
+      <el-table
+        stripe
+        border
+        height="550"
+        style="min-width:100%"
+        :data="$store.state.hisData">
+        <el-table-column type="expand">
+          <template slot-scope="s">
+            <template v-for="(it,index) in s.row.con">
+              <div class="his-expand" :key="index">
+                <el-tag :type="getHisIcon(it.type).t" size="medium">
+                  <i :class="getHisIcon(it.type).o"/>&nbsp;&nbsp;{{getHisIcon(it.type).i}}
+                </el-tag>
+                <div class="his-expand-text">{{it.text}}</div> 
+              </div>
+            </template>
+          </template>
+        </el-table-column>
+        <el-table-column
+          type="index"
+          label="序号"
+          align="center"
+          width="50">
+        </el-table-column>
+        <el-table-column
+          prop="time"
+          label="日期"
+          align="center"
+          sortable
+          min-width="100">
+        </el-table-column>
+        <el-table-column
+          label="标签"
+          align="center"
+          min-width="120">
+          <template slot-scope="srow">
+            <template v-for="(it,index) in getHisTag(srow.row.con)">
+              <el-tag :type="it.t" :key="index" size="medium">
+                <i :class="it.o"></i>&nbsp;&nbsp;{{it.i}}
+              </el-tag>&nbsp;&nbsp;&nbsp;
+            </template>
+          </template>
+        </el-table-column>
+        <el-table-column
+          prop="version"
+          label="版本"
+          align="center"
+          min-width="30">
+        </el-table-column>
+      </el-table>
+    </el-dialog>
   </div>
 </template>
 
@@ -84,14 +162,16 @@
     },  
 
     mounted(){
-
+      this.loadiframe()
     },
 
     data() {
       return {
         //页面展示数据
         dialogVisible : false,
+        dialoghis : false,
         ifvx : null,
+        loading : true,
         //页面使用数据
         imas : [
           {
@@ -147,6 +227,22 @@
     },
 
     methods: {
+      loadiframe(){
+        let i = document.getElementById('3dcube')
+        console.time('魔方加载用时')
+        if(i.attachEvent){
+          i.attachEvent('onload',() =>{
+            this.loading = false
+            console.timeEnd('魔方加载用时')
+          })
+        } else {
+          i.onload = () =>{
+            this.loading = false
+            console.timeEnd('魔方加载用时')
+          }
+        }
+      },
+
       gotab(url){
         window.open(url)
       },
@@ -157,7 +253,7 @@
       },
 
       showhis(){
-
+        this.dialoghis = true
       },
 
       showme(){
@@ -167,13 +263,14 @@
   }
 </script>
 
-<style>
-  #love .dialogClass {
+<style lang="scss">
+  #love .dialogClassjmg {
     width: 300px;
     height: 300px;
   }
 
   #love .el-dialog__title {
+    color: #1989fa; 
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 2rem;
@@ -183,8 +280,35 @@
     box-shadow: 9px 9px 5px 5px #446679;
     -webkit-box-shadow: 9px 9px 5px 5px #446679;
   }
+
+  #his .el-dialog__title{
+    color: #1989fa; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+  }
+
+  #his .el-dialog {
+    thead {
+      color: #1989fa;
+    }
+    th {
+      padding: 6px 0;
+    }
+    td {
+      padding: 8px 0;
+    }
+  }
+
 </style>
 
 <style scoped lang="scss">
-
+  .his-expand {
+    margin-left: 50px;
+    padding-bottom: 10px;
+    .his-expand-text {
+      display: inline;
+      margin-left: 20px;
+    }
+  }
 </style>
