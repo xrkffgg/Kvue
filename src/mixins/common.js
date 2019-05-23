@@ -1,3 +1,4 @@
+import * as array from './array' 
 export default {
   data() {
     return {
@@ -34,17 +35,17 @@ export default {
       let i,t,o
       switch (type){
         case 'new':
-          i = '新增'
+          i = '新 增'
           t = ''
           o = 'el-icon-plus'
           break;
         case 'fix':
-          i = '修复'
+          i = '修 复'
           t = 'success'
           o = 'el-icon-check'
           break; 
         case 'opt':
-          i = '优化'
+          i = '优 化'
           t = 'warning'
           o = 'el-icon-finished'
           break;
@@ -62,12 +63,7 @@ export default {
         let o = this.getHisIcon(it.type)
         arr.push(o)
       })
-      let h = {}
-      let i = arr.reduce((x,y) =>{
-        h[y.name]? '':arr[]
-      })
-      console.log(set)
-      return set
+      return array.default.methods.delArrHasObjSome(arr,'o')
     },
   },
 }

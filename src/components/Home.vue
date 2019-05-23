@@ -90,6 +90,7 @@
         border
         height="550"
         style="min-width:100%"
+        cell-class-name="cellname"
         :data="$store.state.hisData">
         <el-table-column type="expand">
           <template slot-scope="s">
@@ -298,6 +299,13 @@
     td {
       padding: 8px 0;
     }
+  }
+
+  .cellname {
+    font-family: 'Roboto-Thin';
+    font-weight: bolder;
+    color: #000;
+    font-size: 15px;
   }
 
 </style>

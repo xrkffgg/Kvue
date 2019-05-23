@@ -11,36 +11,16 @@ export default new Vuex.Store({
     hisData : [
       {
         time : '2019-05-23',
-        version : 'v0.8',
+        version : 'v0.1',
         con : [
           {
-            type : 'fix',
-            text : '修复ss'
-          },
-          {
-            type : 'fix',
-            text : '修复ss2'
-          },
-          {
             type : 'new',
-            text : 'newss'
+            text : `Kvue项目初版主页完成，
+                    包含有head、sider、main。
+                    side联动、若干特效。Home图标、版本记录、3dcube。`
           },
         ],
       },
-      // {
-      //   time : '2019-05-21',
-      //   version : 'v0.7',
-      //   con : [
-      //     {
-      //       type : 'opt',
-      //       text : '优化ss'
-      //     },
-      //     {
-      //       type : 'new',
-      //       text : 'newss'
-      //     },
-      //   ],
-      // },
     ]
   },
   mutations: {

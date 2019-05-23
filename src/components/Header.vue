@@ -18,12 +18,12 @@
 </template>
 
 <script>
-  import mixinDateModule from '../mixins/date-module.js' 
+  import mixinDate from '../mixins/date.js' 
   import mixinCommon from '../mixins/common'
   import store from '../store'
 
   export default {
-    mixins: [mixinDateModule,mixinCommon],
+    mixins: [mixinDate,mixinCommon],
     name : 'headercom',
     components: {
 
