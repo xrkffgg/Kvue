@@ -10,8 +10,22 @@ export default new Vuex.Store({
     //  fix opt new 修复/优化/新增
     hisData : [
       {
+        time : '2019-05-24',
+        version : 'v0.0.2',
+        con : [
+          {
+            type : 'new',
+            text : `表格下拉只显示单个。`
+          },
+          {
+            type : 'new',
+            text : `增加关于页面。`
+          },
+        ],
+      },
+      {
         time : '2019-05-23',
-        version : 'v0.1',
+        version : 'v0.0.1',
         con : [
           {
             type : 'new',

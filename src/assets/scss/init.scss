@@ -12,6 +12,12 @@
 }
 
 @font-face{
+  font-family:"en";
+  font-display: swap;
+  src:url('../font/FiraCode-Regular.ttf');
+}
+
+@font-face{
   font-family:"SourceHanSans-Regular";
   font-display: swap;
   src:url('../font/SourceHanSans-Regular.otf');

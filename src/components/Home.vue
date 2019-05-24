@@ -91,7 +91,10 @@
         height="550"
         style="min-width:100%"
         cell-class-name="cellname"
-        :data="$store.state.hisData">
+        row-key="version"
+        :expand-row-keys="expands"
+        :data="$store.state.hisData"
+        @expand-change="doExpand">
         <el-table-column type="expand">
           <template slot-scope="s">
             <template v-for="(it,index) in s.row.con">
@@ -133,7 +136,7 @@
           prop="version"
           label="版本"
           align="center"
-          min-width="30">
+          min-width="50">
         </el-table-column>
       </el-table>
     </el-dialog>
@@ -215,7 +218,9 @@
             src : 'https://img.shields.io/badge/%E2%9D%A4-%E7%AE%80%20%E4%B9%A6-orange.svg?style=flat-square',
             url : 'https://www.jianshu.com/u/4ca4daac5890'
           },
-        ]
+        ],
+
+        expands : [],
         //码表
 
         //js使用数据
@@ -244,6 +249,17 @@
         }
       },
 
+      doExpand(row,expRows){
+        if(expRows.length > 0){
+          this.expands.push(row.version)
+          if(expRows.length >1){
+            this.expands.shift()
+          }
+        }else {
+          this.expands.shift()
+        }
+      },
+
       gotab(url){
         window.open(url)
       },
@@ -258,7 +274,7 @@
       },
 
       showme(){
-
+        this.$router.replace({name : 'about'})
       },
     }
   }

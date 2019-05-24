@@ -1,6 +1,6 @@
 <template>
   <div id="js001">
-    js001
+    <k-ready></k-ready>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
     name : 'js001',
     mixins : [],
     components: {
-
+      Ready,
     },
 
     props:[

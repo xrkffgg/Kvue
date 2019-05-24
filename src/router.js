@@ -83,6 +83,11 @@ export const ROUTES = [
       },
     ]
   },
+  {
+    path : '/About',
+    name : 'about',
+    component: () => import('./components/about/About.vue'),
+  }
 ]
 
 const router =  new Router({
