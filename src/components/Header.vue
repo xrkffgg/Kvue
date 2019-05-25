@@ -1,17 +1,17 @@
 <template>
   <div id="headercom">
     <div class="title inline">
-      <div class="title1 num inline" @click="doGoHome">
+      <div class="title1 num inline cur-pointer" @click="doGoHome">
         <a>Kvue</a>
       </div>
-      <div class="title2 num inline" @click="doGoGitUser">
+      <div class="title2 num inline cur-pointer" @click="doGoGitUser">
         <a>by xrkffgg</a>
       </div>
     </div>
     
     <div class="tab inline">
-      <a class="headmenu inline" @click="doGoHome">首 页</a>
-      <a class="headmenu num inline" @click="doGoGit">Github</a>
+      <a class="headmenu inline cur-pointer" @click="doGoHome">首 页</a>
+      <a class="headmenu num inline cur-pointer" @click="doGoGit">Github</a>
       <a class="headtime num inline">{{ nowDate }}</a>
     </div>
   </div>

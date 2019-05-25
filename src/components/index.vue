@@ -1,5 +1,5 @@
 <template>
-  <div id="index" v-loading="loading">
+  <div id="index" v-loading="loading" class="cur-default">
     <div class="header">
       <header-com></header-com>
     </div>
@@ -10,7 +10,7 @@
 
     <div class="main">
       <div class="view">
-        <transition name="el-fade-in-linear">
+        <transition>
           <router-view/>
         </transition>
       </div>

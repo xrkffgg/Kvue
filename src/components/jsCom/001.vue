@@ -10,7 +10,7 @@
     name : 'js001',
     mixins : [],
     components: {
-      Ready,
+      
     },
 
     props:[

@@ -1,6 +1,6 @@
 <template>
   <div id="router">
-    <transition name="el-fade-in-linear">
+    <transition>
       <keep-alive>
         <router-view/>
       </keep-alive>

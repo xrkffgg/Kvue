@@ -1,7 +1,9 @@
 <template>
-  <div id="ready">
+  <div id="ready" v-show="show">
     <div class="ready">😋页面待开发……</div>
-    <el-button @click="goBack">返回主页</el-button>
+    <div class="btnb">
+      <el-button type="primary" @click="goBack">返回主页</el-button>
+    </div>
   </div>
 </template>
 
@@ -27,13 +29,13 @@
     },  
 
     mounted(){
-
+      this.show = true
     },
 
     data() {
       return {
         //页面展示数据
-
+        show : false,
         //页面使用数据
 
         //码表
@@ -63,5 +65,11 @@
     font-size: 5rem;
     text-shadow: #bbb 0 1px 0, #b5b5b5 0 2px 0, #acacac 0 3px 0, #a0a0a0 -1px 3px 0, #919191 -1px 4px 0, #7f7f7f -1px 5px 0, rgba(0,0,0,.2) -1px 6px 1px, rgba(0,0,0,.3) -2px 9px 6px;
     transform: translateZ(0) rotateX(9deg) rotateY(1.5deg);
+  }
+
+  .btnb {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
   }
 </style>

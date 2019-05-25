@@ -1,6 +1,6 @@
 <template>
   <div id="css001">
-    css001
+    <k-ready/>
   </div>
 </template>
 

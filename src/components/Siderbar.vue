@@ -4,7 +4,7 @@
       <div id="avatarId" class="box-circle">
         <div id="fillId" class="fill"></div>
       </div>
-      <div class="box-font num" @click="doGoGitUser">
+      <div class="box-font num cur-pointer" @click="doGoGitUser">
         xrkffgg
       </div>
       <div class="box-sign num">
@@ -15,7 +15,7 @@
     <el-menu
       :default-active="$store.state.sideBarName"
       unique-opened
-      class="el-menu-vertical-demo sidemenu">
+      class="sidemenu">
       <template v-for="list in lists">
         <el-submenu :index="list.name" :key="list.side_id" v-if="list.children && list.children.length > 0">
           <template slot="title">
@@ -43,13 +43,13 @@
       <div class="fotter-follow num">Follow <div style="color:red;display:inline;">me</div> at</div>
       <el-row type="flex" justify="space-around" style="margin-top:10px;">
         <el-col :span="6" :offset="2">
-          <div class="follow follow-git" @click="doGoGitUser"></div>
+          <div class="follow follow-git cur-pointer" @click="doGoGitUser"></div>
         </el-col>
         <el-col :span="6">
-          <div class="follow follow-jue" @click="doGoJuejin">掘</div>
+          <div class="follow follow-jue cur-pointer" @click="doGoJuejin">掘</div>
         </el-col>
         <el-col :span="6">
-          <div class="follow follow-jian" @click="doGoJianshu">简</div>
+          <div class="follow follow-jian cur-pointer" @click="doGoJianshu">简</div>
         </el-col>
       </el-row>
     </div>
