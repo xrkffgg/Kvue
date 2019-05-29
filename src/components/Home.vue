@@ -46,7 +46,7 @@
     <div class="homeaboutbox">
       <div class="aboutcon">
         <div class="card">
-          <div class="cardfont cur-pointer" @click="showhis">版本记录</div>
+          <div class="cardfont cur-pointer" @click="showhis">项目记录</div>
         </div>
         <div class="card">
           <div class="cardfont cur-pointer" @click="doGoGitIssues">意见建议</div>
@@ -78,79 +78,55 @@
       </div>
     </el-dialog>
 
-    <!-- 版本记录 -->
+    <!-- 项目记录 -->
     <el-dialog
       id="his"
-      title="版本记录"
+      :title="his_title"
       :show-close="false"
-      :visible.sync="dialoghis"
-      center>
-      <el-table
-        stripe
-        border
-        height="550"
-        style="min-width:100%"
-        cell-class-name="cellname"
-        row-key="version"
-        :expand-row-keys="expands"
-        :data="$store.state.hisData"
-        @expand-change="doExpand">
-        <el-table-column type="expand">
-          <template slot-scope="s">
-            <template v-for="(it,index) in s.row.con">
-              <div class="his-expand" :key="index">
-                <el-tag :type="getHisIcon(it.type).t" size="medium">
-                  <i :class="getHisIcon(it.type).o"/>&nbsp;&nbsp;{{getHisIcon(it.type).i}}
-                </el-tag>
-                <div class="his-expand-text">{{it.text}}</div> 
-              </div>
-            </template>
-          </template>
-        </el-table-column>
-        <el-table-column
-          type="index"
-          label="序号"
-          align="center"
-          width="50">
-        </el-table-column>
-        <el-table-column
-          prop="time"
-          label="日期"
-          align="center"
-          sortable
-          min-width="100">
-        </el-table-column>
-        <el-table-column
-          label="标签"
-          align="center"
-          min-width="120">
-          <template slot-scope="srow">
-            <template v-for="(it,index) in getHisTag(srow.row.con)">
-              <el-tag :type="it.t" :key="index" size="medium">
-                <i :class="it.o"></i>&nbsp;&nbsp;{{it.i}}
-              </el-tag>&nbsp;&nbsp;&nbsp;
-            </template>
-          </template>
-        </el-table-column>
-        <el-table-column
-          prop="version"
-          label="版本"
-          align="center"
-          min-width="50">
-        </el-table-column>
-      </el-table>
+      center
+      :visible.sync="dialoghis">
+      <center>
+        <el-button 
+          round 
+          :plain="!ifhis"
+          type="primary" 
+          size="medium" 
+          icon="el-icon-document-checked" 
+          @click="ifhis = true">版本记录
+        </el-button>
+
+        <el-button 
+          round 
+          :plain="ifhis"
+          type="danger" 
+          size="medium" 
+          icon="el-icon-document-delete" 
+          @click="ifhis = false">问题记录
+        </el-button>
+
+      </center>
+      <br/>
+      <div v-if="ifhis">
+        <his-com/>
+      </div>
+      <div v-else>
+        <pro-com/>
+      </div>
     </el-dialog>
   </div>
 </template>
 
 <script>
   import mixinCommon from '../mixins/common'
+  import hisCOM from './notes/His.vue'
+  import proCOM from './notes/Problem.vue'
 
   export default {
     name : 'home',
     mixins: [mixinCommon],
     components: {
-
+      'his-com': hisCOM,
+      'pro-com': proCOM,
     },
 
     props:[
@@ -162,7 +138,16 @@
     },
 
     watch:{
-
+      ifhis(n,o){
+        let ti = document.getElementsByClassName('el-dialog__title')
+        if(n){
+          ti[1].style.color = this.his_color
+          this.his_title = '版本记录'
+        } else {
+          ti[1].style.color = this.error_color
+          this.his_title = '问题记录'
+        }
+      }
     },  
 
     mounted(){
@@ -176,7 +161,12 @@
         dialoghis : false,
         ifvx : null,
         loading : true,
+        
+        activeName : 'his',
         //页面使用数据
+        his_title : '版本记录',
+        ifhis : true,
+
         imas : [
           {
             id: 'ima1',
@@ -220,11 +210,11 @@
           },
         ],
 
-        expands : [],
         //码表
 
         //js使用数据
-
+        his_color : '#1989fa',
+        error_color : '#F56C6C',
         //子组件使用数据
 
         //rules
@@ -246,17 +236,6 @@
             this.loading = false
             console.timeEnd('魔方加载用时')
           }
-        }
-      },
-
-      doExpand(row,expRows){
-        if(expRows.length > 0){
-          this.expands.push(row.version)
-          if(expRows.length >1){
-            this.expands.shift()
-          }
-        }else {
-          this.expands.shift()
         }
       },
 
@@ -317,22 +296,18 @@
     }
   }
 
+  #his .el-dialog__body {
+    padding: 5px 25px 30px;
+  }
+
   .cellname {
     font-family: 'Roboto-Thin';
     font-weight: bolder;
     color: #000;
     font-size: 15px;
   }
-
 </style>
 
 <style scoped lang="scss">
-  .his-expand {
-    margin-left: 50px;
-    padding-bottom: 10px;
-    .his-expand-text {
-      display: inline;
-      margin-left: 20px;
-    }
-  }
+
 </style>

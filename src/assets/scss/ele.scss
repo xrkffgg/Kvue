@@ -1,0 +1,68 @@
+.el-menu {
+  border-right: 0px;
+}
+
+@mixin cur-hand {
+  cursor: pointer;
+  cursor: url('../cur/Hand.png'), auto !important;
+}
+
+@mixin cur-def {
+  cursor: default;
+  cursor: url('../cur/Arrow.png'), auto !important;
+}
+
+.el-submenu .el-menu-item {
+  min-width: auto;
+  @include cur-hand;
+}
+
+.el-submenu__title {
+  @include cur-hand;
+}
+
+.el-menu-item.is-active {
+  @include cur-hand;
+}
+
+.el-table__expand-icon {
+  @include cur-hand;
+}
+
+.el-table th.is-sortable {
+  @include cur-hand;
+}
+
+.caret-wrapper {
+  @include cur-hand;
+}
+
+.el-button {
+  @include cur-hand;
+}
+
+.el-collapse-item__header {
+  @include cur-hand;
+}
+
+.el-tabs__item {
+  @include cur-hand;
+}
+
+.el-checkbox__input.is-disabled+span.el-checkbox__label {
+  color: #606266;
+  @include cur-def;
+}
+
+.el-checkbox__input.is-disabled .el-checkbox__inner {
+  background-color: #fff;
+  @include cur-def();
+}
+
+textarea {
+  @include cur-def();
+}
+
+button {
+  font-family: 'SourceHanSans-Regular' !important;
+}

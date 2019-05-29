@@ -10,8 +10,8 @@
 
     <div class="main">
       <div class="view">
-        <transition>
-          <router-view/>
+        <transition name="el-fade-in-linear">
+          <router-view v-show="show"/>
         </transition>
       </div>
     </div>
@@ -39,7 +39,12 @@
     },
 
     watch:{
-
+      $route(to,from){
+        this.show = false
+        this.$nextTick(() =>{
+          this.show = true
+        })
+      }
     },  
 
     mounted(){
@@ -50,6 +55,7 @@
       return {
         //页面展示数据
         loading : false,
+        show : true,
         //页面使用数据
 
         //码表
@@ -65,13 +71,11 @@
 
     methods: {
       loadfont(){
-        this.loading = true
         console.time("字体加载用时")
         var ooo = new FontFaceObserver('SourceHanSans-Regular')
         ooo.load().then(() =>{
           document.getElementById('index').style.fontFamily = 'SourceHanSans-Regular'
           console.timeEnd("字体加载用时")
-          this.loading = false
         })
       },
     }

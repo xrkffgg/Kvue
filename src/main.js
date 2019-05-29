@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import Ready from './components/ready'
+import Ready from './components/Ready'
 
 // 引入baidumap
 import bmap from 'vue-baidu-map'

@@ -17,7 +17,7 @@ export const ROUTES = [
   {
     path: '/',
     name: 'index',
-    component: () => import('./components/index'),
+    component: () => import('./components/Index'),
     redirect: { name : 'home'},
     children : [
       //  Home

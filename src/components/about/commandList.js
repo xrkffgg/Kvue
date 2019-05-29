@@ -1,8 +1,10 @@
+import HIS from '../notes/hisData'
+
 const commandList = {
   version: {
     description: 'Return this project version',
     messages: [
-      { message: window.SITE_CONFIG['version'] }
+      { message: HIS[0].version }
     ]
   },
 
