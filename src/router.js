@@ -81,6 +81,56 @@ export const ROUTES = [
           },
         ]
       },
+      {
+        path : '/Echarts',
+        name : 'echarts',
+        redirect: { name : 'echarts001'},
+        side_id : getid(),
+        side_icon : icon('data-analysis'),
+        component : () => import('./components/Router'),
+        side_name : 'Echarts',
+        children : [
+          {
+            path : '001',
+            name : 'echarts001',
+            component : () => import('./components/echartsCom/001.vue'),
+            side_id : getid(),
+            side_name : '线形图',
+          },
+          {
+            path : '002',
+            name : 'echarts002',
+            component : () => import('./components/echartsCom/002.vue'),
+            side_id : getid(),
+            side_name : '柱状图',
+          },
+        ]
+      },
+      {
+        path : '/EaselJS',
+        name : 'easeljs',
+        redirect: { name : 'easeljs001'},
+        side_id : getid(),
+        side_icon : icon('sugar'),
+        component : () => import('./components/Router'),
+        side_name : 'EaselJS',
+        children : [
+          {
+            path : '001',
+            name : 'easeljs001',
+            component : () => import('./components/easeljsCom/001.vue'),
+            side_id : getid(),
+            side_name : 'GlobalToLocal2',
+          },
+          {
+            path : '002',
+            name : 'easeljs002',
+            component : () => import('./components/easeljsCom/002.vue'),
+            side_id : getid(),
+            side_name : '柱状图',
+          },
+        ]
+      },
     ]
   },
   {

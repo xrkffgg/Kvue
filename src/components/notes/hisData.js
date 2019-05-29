@@ -1,7 +1,7 @@
 const HIS = [
   //  fix opt new 修复/优化/新增
   {
-    time : '2019-05-28',
+    time : '2019-05-29',
     version : 'v0.0.2',
     con : [
       {

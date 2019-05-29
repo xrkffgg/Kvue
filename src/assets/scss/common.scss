@@ -622,8 +622,27 @@ $main--title--time--color : #999;
   text-shadow: #cacaca 0 0 1px;
 }
 
+.main-title-tip {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  padding: 15px 15px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  background-color: #e4e4e4;
+}
+
 .main-content {
   padding: 40px 20px 20px 20px;
+}
+
+
+.main-content-box {
+  margin: 0px auto;
+  width: 1250px;
+  height: 600px;
+  border: 2px solid $title--color;
 }
 
 // <<<---
