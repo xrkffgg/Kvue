@@ -6,7 +6,7 @@
       height="550"
       style="min-width:100%"
       cell-class-name="cellname"
-      row-key="version"
+      row-key="time"
       :expand-row-keys="expands"
       :data="hisData"
       @expand-change="doExpand">
@@ -105,7 +105,7 @@
     methods: {
       doExpand(row,expRows){
         if(expRows.length > 0){
-          this.expands.push(row.version)
+          this.expands.push(row.time)
           if(expRows.length >1){
             this.expands.shift()
           }

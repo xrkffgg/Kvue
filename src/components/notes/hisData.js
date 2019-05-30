@@ -1,6 +1,16 @@
 const HIS = [
   //  fix opt new 修复/优化/新增
   {
+    time : '2019-05-30',
+    version : 'v0.0.2',
+    con : [
+      {
+        type : 'new',
+        text : `增加easeljs，测试样例`
+      },
+    ],
+  },
+  {
     time : '2019-05-29',
     version : 'v0.0.2',
     con : [

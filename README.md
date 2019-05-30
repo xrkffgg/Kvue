@@ -7,7 +7,7 @@
 [![GitHub](https://img.shields.io/github/license/xrkffgg/kvue.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/LICENSE)
 [![Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/src/assets/jpg/vx.png)
 [![Badge](https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square)](https://github.com/xrkffgg/kvue/blob/master/src/assets/jpg/zfb.png)
-
+[![HitCount](http://hits.dwyl.io/xrkffgg/kvue.svg)](http://hits.dwyl.io/xrkffgg/kvue)
 
 
 > ### 🙆‍ **用 于 实 践 各 种 小 功 能**
