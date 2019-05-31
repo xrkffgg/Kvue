@@ -131,6 +131,24 @@ export const ROUTES = [
           },
         ]
       },
+      {
+        path : '/Plugins',
+        name : 'plugins',
+        redirect: { name : 'plugins001'},
+        side_id : getid(),
+        side_icon : icon('setting'),
+        component : () => import('./components/Router'),
+        side_name : 'Plugins',
+        children : [
+          {
+            path : '001',
+            name : 'plugins001',
+            component : () => import('./components/pluginsCom/001.vue'),
+            side_id : getid(),
+            side_name : '01',
+          },
+        ]
+      },
     ]
   },
   {

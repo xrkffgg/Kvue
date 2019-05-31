@@ -86,7 +86,7 @@
         canvas.onmousedown = this.mouseDown
         canvas.onmouseup = this.mouseUp
 
-        var fade = new createjs.Shape(new createjs.Graphics().f("#FFF").dr(0, 0, canvas.width, canvas.height))
+        var fade = new createjs.Shape(new createjs.Graphics().f("#fff ").dr(0, 0, canvas.width, canvas.height))
 
         fade.alpha = 0.02
         stage.addChild(fade)
