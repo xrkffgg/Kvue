@@ -53,6 +53,13 @@ export const ROUTES = [
             side_id : getid(),
             side_name : '动画样式',
           },
+          {
+            path : '002',
+            name : 'css002',
+            component : () => import('./components/cssCom/002.vue'),
+            side_id : getid(),
+            side_name : '居中',
+          },
         ]
       },
       //  Js
