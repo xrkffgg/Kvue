@@ -10,6 +10,8 @@
 [![HitCount](http://hits.dwyl.io/xrkffgg/kvue.svg)](http://hits.dwyl.io/xrkffgg/kvue)
 
 
+<div style="color:red; text-align:center; font-size:20px;">Keep coding</div>
+
 > ### 🙆‍ **用 于 实 践 各 种 小 功 能**
 > ### 🎨 **用 于 记 录 各 种 炫 酷 素 材**
 > ### 📘 **根 据 目 录 区 分 展 示**
@@ -18,18 +20,16 @@
 
 ## 项目启动
 ```
-npm i
-npm run serve
+npm run dev
 ```
 ## 说明 📃
 
 1. 低版本浏览器不支持！
 2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`，首次字体加载略慢，见谅！
 3. 由于目前技术和时间有限，未添加手机端适配，建议分辨率1920×1080
-4. 参考网页：https://tomotoes.com/ & http://zhangwenli.com/
-5. UI: Element-ui
-6. 关于页：https://github.com/dongsuo/vue-terminal
-7. 有任何建议或指导请点击 [【issues】](https://github.com/xrkffgg/kvue/issues/new)
+4. UI: Element-ui
+5. 关于页：https://github.com/dongsuo/vue-terminal
+6. 有任何建议或指导请点击 [【issues】](https://github.com/xrkffgg/kvue/issues/new)
 
 
 ## 声明 📖

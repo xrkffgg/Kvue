@@ -1,5 +1,6 @@
 module.exports = {
-  outputDir: 'kvue',
+  outputDir: 'Kvue',
   productionSourceMap: false,
+  assetsDir: 'assets',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
 }
