@@ -53,13 +53,6 @@ export const ROUTES = [
             side_id : getid(),
             side_name : '动画样式',
           },
-          {
-            path : '002',
-            name : 'css002',
-            component : () => import('./components/cssCom/002.vue'),
-            side_id : getid(),
-            side_name : '居中',
-          },
         ]
       },
       //  Js
@@ -85,6 +78,25 @@ export const ROUTES = [
             component : () => import('./components/jsCom/002.vue'),
             side_id : getid(),
             side_name : 'JS样式2',
+          },
+        ]
+      },
+      //  Js
+      {
+        path : '/Canvas',
+        name : 'canvas',
+        redirect: { name : 'canvas001'},
+        side_id : getid(),
+        side_icon : icon('picture-outline-round'),
+        component : () => import('./components/Router'),
+        side_name : 'Canvas',
+        children : [
+          {
+            path : '001',
+            name : 'canvas001',
+            component : () => import('./components/canvasCom/001.vue'),
+            side_id : getid(),
+            side_name : '图片颜色',
           },
         ]
       },

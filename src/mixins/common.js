@@ -9,7 +9,7 @@ export default {
   methods: {
     // window.open
     doGoGit(){
-      window.open('https://github.com/xrkffgg/kvue')
+      window.open('https://github.com/xrkffgg/Kvue')
     },
 
     doGoGitUser(){
@@ -17,7 +17,7 @@ export default {
     },
 
     doGoGitIssues(){
-      window.open('https://github.com/xrkffgg/kvue/issues')
+      window.open('https://github.com/xrkffgg/Kvue/issues')
     },
 
     doGoJuejin(){

@@ -16,6 +16,12 @@ const PRO = {
       reason : '',
     },
     {
+      title : '路由目录',
+      solve : false,
+      describe : '使用动态定义',
+      reason : '',
+    },
+    {
       title : 'CSS',
       solve : false,
       describe : 'css样式定义不够精简',

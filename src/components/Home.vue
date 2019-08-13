@@ -26,7 +26,7 @@
           <iframe
             id="3dcube"
             v-show="!loading"
-            src="https://it-xrk.github.io/" 
+            src="https://xrkffgg.github.io/3dcube/" 
             name="3dcube"
             width="100%"
             height="100%"
@@ -171,27 +171,27 @@
           {
             id: 'ima1',
             src : 'https://img.shields.io/badge/Kvue-xrkffgg-brightgreen.svg?style=flat-square',
-            url : 'https://github.com/xrkffgg/kvue'
+            url : 'https://github.com/xrkffgg/Kvue'
           },
           {
             id: 'ima2',
-            src : 'https://img.shields.io/github/last-commit/xrkffgg/kvue.svg?color=red&style=flat-square',
-            url : 'https://github.com/xrkffgg/kvue/commits'
+            src : 'https://img.shields.io/github/last-commit/xrkffgg/Kvue.svg?color=red&style=flat-square',
+            url : 'https://github.com/xrkffgg/Kvue/commits'
           },
           {
             id: 'ima3',
-            src : 'https://img.shields.io/github/stars/xrkffgg/kvue.svg?style=flat-square',
-            url : 'https://github.com/xrkffgg/kvue/stargazers'
+            src : 'https://img.shields.io/github/stars/xrkffgg/Kvue.svg?style=flat-square',
+            url : 'https://github.com/xrkffgg/Kvue/stargazers'
           },
           {
             id: 'ima4',
-            src : 'https://img.shields.io/github/languages/top/xrkffgg/kvue.svg?color=orange&style=flat-square',
-            url : 'https://github.com/xrkffgg/kvue'
+            src : 'https://img.shields.io/github/languages/top/xrkffgg/Kvue.svg?color=orange&style=flat-square',
+            url : 'https://github.com/xrkffgg/Kvue'
           },
           {
             id: 'ima5',
-            src : 'https://img.shields.io/github/license/xrkffgg/kvue.svg?style=flat-square',
-            url : 'https://github.com/xrkffgg/kvue/blob/master/LICENSE'
+            src : 'https://img.shields.io/github/license/xrkffgg/Kvue.svg?style=flat-square',
+            url : 'https://github.com/xrkffgg/Kvue/blob/master/LICENSE'
           },
           {
             id: 'ima6',
