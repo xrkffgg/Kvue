@@ -1,17 +1,20 @@
 # Kvue
+
 [![Kvue](https://img.shields.io/badge/%E2%9D%A4-Kvue-brightgreen?style=flat-square)](https://github.com/xrkffgg/Kvue)
 [![Ktools](https://img.shields.io/badge/%E2%9D%A4-Ktools-blue?style=flat-square)](https://github.com/xrkffgg/Ktools)
 [![Kme](https://img.shields.io/badge/%E2%9D%A4-Kme-orange?style=flat-square)](https://xrkffgg.github.io/)
 [![Kplugins](https://img.shields.io/badge/%E2%9D%A4-Kplugins-blueviolet?style=flat-square)](https://github.com/xrkffgg/Kplugins)
+[![Knotes](https://img.shields.io/badge/%E2%9D%A4-Knotes-yellow?style=flat-square)](https://github.com/xrkffgg/Knotes)
+
 [![GitHub last commit](https://img.shields.io/github/last-commit/xrkffgg/Kvue.svg?color=red&style=flat-square)](https://github.com/xrkffgg/Kvue/commits)
 [![GitHub stars](https://img.shields.io/github/stars/xrkffgg/Kvue.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/stargazers)
 ![GitHub top language](https://img.shields.io/github/languages/top/xrkffgg/Kvue.svg?color=orange&style=flat-square)
-[![Badge](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square)](https://996.icu/#/zh_CN)
+[![HitCount](http://hits.dwyl.io/xrkffgg/Kvue.svg)](http://hits.dwyl.io/xrkffgg/Kvue)
 [![GitHub](https://img.shields.io/github/license/xrkffgg/Kvue.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/LICENSE)
 [![Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/src/assets/jpg/vx.png)
 [![Badge](https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/src/assets/jpg/zfb.png)
-[![HitCount](http://hits.dwyl.io/xrkffgg/Kvue.svg)](http://hits.dwyl.io/xrkffgg/Kvue)
 
+[![Badge](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square)](https://996.icu/#/zh_CN)
 
 <div style="color:red; text-align:center; font-size:20px;">Keep coding</div>
 
@@ -23,7 +26,7 @@
 
 ## 项目启动
 ```
-npm run dev
+npm run dev || yarn
 ```
 ## 说明 📃
 
