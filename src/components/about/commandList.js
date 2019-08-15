@@ -12,7 +12,7 @@ const commandList = {
     description: 'How to contact author',
     messages: [
       { type: 'info', label: 'GitHub', message: 'https://github.com/xrkffgg' },
-      { type: 'info', label: 'Email', message: 'xrkffgg@vip.qq.com' },
+      { type: 'info', label: 'Email', message: 'xrkffgg@gmail.com' },
     ], 
   },
 

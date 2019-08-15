@@ -16,7 +16,7 @@ const mockData = [
   { time: generateTime(), type: 'info', label: 'Sex:', message: 'Male' },
   { time: generateTime(), type: 'info', label: 'Age:', message: '18 forever' },
   { time: generateTime(), type: 'info', label: 'Alias:', message: 'xrkffgg' },
-  { time: generateTime(), type: 'info', label: 'Email:', message: 'xrkffgg@vip.qq.com' },
+  { time: generateTime(), type: 'info', label: 'Email:', message: 'xrkffgg@gmail.com' },
   { time: generateTime(), type: 'info', label: 'Address:', message: 'beijing,China' },
   { time: generateTime(), type: 'info', label: 'Preferences:', message: 'Music Film Food WOW LOL Steam Beautiful things' },
 
