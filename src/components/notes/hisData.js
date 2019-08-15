@@ -1,6 +1,16 @@
 const HIS = [
   //  fix opt new 修复/优化/新增
   {
+    time : '2019-08-15',
+    version : 'v0.0.3',
+    con : [
+      {
+        type : 'new',
+        text : `新增canvas图片处理、表格滚动`
+      },
+    ],
+  },
+  {
     time : '2019-05-30',
     version : 'v0.0.2',
     con : [

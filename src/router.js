@@ -81,7 +81,26 @@ export const ROUTES = [
           },
         ]
       },
-      //  Js
+      // UI
+      {
+        path : '/UI',
+        name : 'ui',
+        redirect: { name : 'ui001'},
+        side_id : getid(),
+        side_icon : icon('eleme'),
+        component : () => import('./components/Router'),
+        side_name : 'UI',
+        children : [
+          {
+            path : '001',
+            name : 'ui001',
+            component : () => import('./components/uiCom/001.vue'),
+            side_id : getid(),
+            side_name : '表格滚动',
+          },
+        ]
+      },
+      // 
       {
         path : '/Canvas',
         name : 'canvas',
