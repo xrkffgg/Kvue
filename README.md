@@ -16,8 +16,6 @@
 
 [![Badge](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square)](https://996.icu/#/zh_CN)
 
-<div style="color:red; text-align:center; font-size:20px;">Keep coding</div>
-
 > ### 🙆‍ **用 于 实 践 各 种 小 功 能**
 > ### 🎨 **用 于 记 录 各 种 炫 酷 素 材**
 > ### 📘 **根 据 目 录 区 分 展 示**
@@ -48,6 +46,4 @@ npm run dev || yarn
 > **欢迎关注 我的：** [![GitHub](https://img.shields.io/badge/%E2%9D%A4-GitHub-lightgrey.svg?style=flat-square)](https://github.com/xrkffgg) [![juejin](https://img.shields.io/badge/%E2%9D%A4-%E6%8E%98%20%E9%87%91-blue.svg?style=flat-square)](https://juejin.im/user/59c369496fb9a00a4843a3e2) [![jianshu](https://img.shields.io/badge/%E2%9D%A4-%E7%AE%80%20%E4%B9%A6-orange.svg?style=flat-square)](https://www.jianshu.com/u/4ca4daac5890)
 
 ## license
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本文库采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
-
-- **源码地址为：**[https://github.com/xrkffgg/Kvue](https://github.com/xrkffgg/Kvue)
+[MIT](https://github.com/xrkffgg/Kvue/blob/master/LICENSE)
