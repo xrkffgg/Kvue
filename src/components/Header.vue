@@ -73,7 +73,7 @@
 
     methods: {
       doGoHome(){
-        this.$router.push({path : '/'})
+        window.location.href = 'https://xrkffgg.github.io/'
       },
     }
   }
