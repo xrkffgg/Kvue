@@ -167,6 +167,13 @@ export const ROUTES = [
             side_id : getid(),
             side_name : '柱状图',
           },
+          {
+            path : '003',
+            name : 'easeljs003',
+            component : () => import('./components/easeljsCom/003.vue'),
+            side_id : getid(),
+            side_name : 'Mark',
+          },
         ]
       },
       {
