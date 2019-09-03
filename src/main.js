@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Ready from './components/Ready'
+import Out from './components/Out'
 
 // 引入baidumap
 import bmap from 'vue-baidu-map'
@@ -20,6 +21,7 @@ import './assets/scss/init.scss'
 
 // ready
 Vue.component('k-ready', Ready)
+Vue.component('k-out', Out)
 
 Vue.config.productionTip = false
 

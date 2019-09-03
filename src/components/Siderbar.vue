@@ -107,7 +107,6 @@
       goto(it){
         this.$router.replace({name : it.name})
       },
-
     }
   }
 </script>
