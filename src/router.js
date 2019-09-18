@@ -44,7 +44,7 @@ export const ROUTES = [
             name : 'css001',
             component : () => import('./components/cssCom/001.vue'),
             side_id : getid(),
-            side_name : '字体样式',
+            side_name : '水纹效果',
           },
           {
             path : '002',
