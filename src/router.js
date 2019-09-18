@@ -70,7 +70,7 @@ export const ROUTES = [
             name : 'js001',
             component : () => import('./components/jsCom/001.vue'),
             side_id : getid(),
-            side_name : 'JS样式1',
+            side_name : '数字转千分',
           },
           {
             path : '002',

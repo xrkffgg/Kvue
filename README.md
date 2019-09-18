@@ -12,9 +12,9 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/xrkffgg/Kvue.svg?color=orange&style=flat-square)
 [![HitCount](http://hits.dwyl.io/xrkffgg/Kvue.svg)](http://hits.dwyl.io/xrkffgg/Kvue)
 [![GitHub](https://img.shields.io/github/license/xrkffgg/Kvue.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/LICENSE)
+
 [![Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/src/assets/jpg/vx.png)
 [![Badge](https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square)](https://github.com/xrkffgg/Kvue/blob/master/src/assets/jpg/zfb.png)
-
 [![Badge](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg?style=flat-square)](https://996.icu/#/zh_CN)
 
 > ### 🙆‍ **用 于 实 践 各 种 小 功 能**
@@ -25,7 +25,7 @@
 
 ## 项目启动
 ```
-npm run dev || yarn
+npm run dev || yarn dev
 ```
 ## 说明 📃
 

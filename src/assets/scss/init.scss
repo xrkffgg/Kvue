@@ -44,6 +44,16 @@
   text-shadow: #bbbaba 0 0 1px, #fffffb 0 0 1px, #fffffb 0 0 2px;
 }
 
+// fix input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+  text-align: left;
+}
+
 // common
 @import './common.scss';
 
