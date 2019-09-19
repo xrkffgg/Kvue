@@ -77,8 +77,6 @@
     methods: {
       init(){
         canvas = document.getElementById('c001')
-        console.log(canvas.offsetLeft)
-        console.log(canvas.offsetTop)
         stage = new createjs.Stage(canvas)
         stage.autoClear = false
 

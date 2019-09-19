@@ -1,10 +1,10 @@
 <template>
   <div id="css002">
     <div class="main-title">CSS 动画样式</div>
-    <div class="main-title-time num">2019-05-16</div>
     <div class="main-content">
       <el-tabs tab-position="left">
-        <el-tab-pane label="图 片 旋 转">
+        <el-tab-pane label="图片旋转">
+          <div class="main-title-time num">2019-05-16</div>
           <el-row :gutter="30">
             <el-col :span="8">
               <div class="tag">
@@ -54,6 +54,17 @@
 
           </el-row>
           
+        </el-tab-pane>
+        <el-tab-pane label="播放按钮">
+          <div class="main-title-time num">2019-09-19</div>
+          <label>
+            <input type="checkbox" id="status" />
+            <svg width="108px" height="108px" viewBox="-37 -29 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle id="bg-circle" stroke="none" fill="#F6A623" fill-rule="evenodd" cx="17" cy="25" r="54"></circle>
+              <path class="left"/>
+              <path class="right"/>
+            </svg>
+          </label>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -121,6 +132,7 @@
 </script>
 
 <style scoped lang="scss">
+  // 
   .tag {
     left:36%;
     margin-top: 40px;
@@ -179,5 +191,29 @@
   @keyframes rotation{
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+  }
+
+  // 2
+  #status {
+    display: none;
+  }
+
+  .left, .right {
+    fill: #FFF;
+    transition: all .5s;
+  }
+
+  .left {
+    d: path('M0 1 0 49 22 37.183075 22 11.8525238Z');
+  }
+  .right {
+    d: path('M44.096035 24.8759317 44.096035 24.8759317 22 37.6656866 22 12.2530012Z');
+  }
+
+  #status:checked + svg .left {
+    d: path('M0 1 0 49 10 49 10 1Z');
+  }
+  #status:checked + svg .right {
+    d: path('M35 0 35 50 25 50 25 0Z');
   }
 </style>

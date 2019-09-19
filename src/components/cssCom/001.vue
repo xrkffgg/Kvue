@@ -9,7 +9,6 @@
       <div class="img">
         <img id="css001-pig" src="../../assets/jpg/pig.png"/>
       </div>
-      <dingtalk></dingtalk>
     </div>
   </div>
 </template>
