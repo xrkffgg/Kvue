@@ -57,14 +57,24 @@
         </el-tab-pane>
         <el-tab-pane label="播放按钮">
           <div class="main-title-time num">2019-09-19</div>
-          <label>
-            <input type="checkbox" id="status" />
-            <svg width="108px" height="108px" viewBox="-37 -29 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <circle id="bg-circle" stroke="none" fill="#F6A623" fill-rule="evenodd" cx="17" cy="25" r="54"></circle>
-              <path class="left"/>
-              <path class="right"/>
-            </svg>
-          </label>
+          <div class="css-show-box">
+            <label>
+              <input type="checkbox" id="status" />
+              <svg width="108px" height="108px" viewBox="-37 -29 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle id="bg-circle" stroke="none" fill="#F6A623" fill-rule="evenodd" cx="17" cy="25" r="54"></circle>
+                <path class="left"/>
+                <path class="right"/>
+              </svg>
+            </label>
+          </div>
+        </el-tab-pane>
+
+        <el-tab-pane label="融合粘滞效果">
+          <div class="main-title-time num">2019-09-23</div>
+          <div class="css-show-box black">
+            <div class="box3 box-1"></div>
+            <div class="box3 box-2"></div>
+          </div>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -133,6 +143,16 @@
 
 <style scoped lang="scss">
   // 
+  .css-show-box {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #80808080;
+    border-radius: 4px;
+    margin: 50px auto;
+    padding: 50px;
+  }
+
+  // 1
   .tag {
     left:36%;
     margin-top: 40px;
@@ -216,4 +236,34 @@
   #status:checked + svg .right {
     d: path('M35 0 35 50 25 50 25 0Z');
   }
+
+  // 3
+  .black {
+    background-color: #000;
+  }
+  .box3 {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(10px) contrast(5);
+  }
+  .box-1 {
+    background-color: deepskyblue;
+    animation: fly-r 5s infinite alternate;
+  }
+  .box-2 {
+    width: 60px; height: 60px;
+    margin-top: 20px;
+    background-color: white;
+    animation: fly-l 5s infinite alternate;
+  }
+  @keyframes fly-r {
+    from { transform: translateX(0); }
+    to   { transform: translateX(120px); }
+  }
+  @keyframes fly-l {
+    from { transform: translateX(120px); }
+    to   { transform: translateX(0); }
+  }
+
 </style>

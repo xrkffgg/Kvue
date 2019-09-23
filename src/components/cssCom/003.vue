@@ -1,20 +1,21 @@
 <template>
   <div id="css003">
     <div class="main-title">炫酷文字</div>
-    <div class="main-title-time num">2019-09-19</div>
     <div class="main-content">
-      <!-- 1 -->
-      <div class="box">
-        <h1>是你的网络有问题。</h1>
-        <h1>清一下缓存再试试。</h1>
-        <h1>重启下电脑再试试。</h1>
-        <h1>换一台设备试试看。</h1>
-        <h1>键盘给你，你来写。</h1>
-        <h1>扫码提需求，谢谢。</h1>
-      </div>
+      <el-tabs tab-position="left">
+        
+        <!-- 2 -->
+        <el-tab-pane label="彩虹文字">
+          <div class="main-title-time num">2019-09-19</div>
+          <div class="flow-slogon">动感超人</div>
+        </el-tab-pane>
 
-      <!-- 2 -->
-      <div class="flow-slogon">动感超人</div>
+        <!-- 3 -->
+        <el-tab-pane label="打字效果">
+          <div class="main-title-time num">2019-09-23</div>
+          <p class="typing">简易中文打字效果，作者：张鑫旭</p>
+        </el-tab-pane>
+      </el-tabs>
     </div>
   </div>
 </template>
@@ -68,40 +69,7 @@
 </script>
 
 <style scoped lang="scss">
-
-// 1
-.box {
-  position: absolute;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-h1 {
-  margin: 0;
-  mix-blend-mode: difference;
-  font-size: 300%;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-
-.box::before {
-  content: '';
-  position: absolute;
-  width: 100vw; height: 100vw;
-  left: calc(50% - 50vw); top: calc(50% - 50vw);
-  margin: auto;
-  background: linear-gradient(#fff 50%, #000 50%);
-  animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   {  transform: rotate(360deg); }
-}
-
 // 2
-
 .flow-slogon {
   margin-left: 400px;
   font-size: 100px;
@@ -115,5 +83,25 @@ h1 {
 @keyframes hue {
   from { filter: hue-rotate(0deg); }
   to { filter: hue-rotate(360deg); }
+}
+
+// 3
+.typing {
+    font-size: 22px;
+    width: 15em;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15em; }
+}
+/* 光标闪啊闪 */
+@keyframes blink-caret {
+  from, to { box-shadow: 1px 0 0 0 transparent; }
+  50% { box-shadow: 1px 0 0 0; }
 }
 </style>

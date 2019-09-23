@@ -31,7 +31,7 @@ npm run dev || yarn dev
 
 1. 低版本浏览器不支持！
 2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`，首次字体加载略慢，见谅！
-3. 由于目前技术和时间有限，未添加手机端适配，建议分辨率1920×1080
+3. 由于目前技术和时间有限，未添加多分辨率视频！
 4. UI: Element-ui
 5. 关于页：https://github.com/dongsuo/vue-terminal
 6. 有任何建议或指导请点击 [【issues】](https://github.com/xrkffgg/Kvue/issues/new)

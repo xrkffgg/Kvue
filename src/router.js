@@ -60,6 +60,13 @@ export const ROUTES = [
             side_id : getid(),
             side_name : '炫酷文字',
           },
+          {
+            path : '004',
+            name : 'css004',
+            component : () => import('./components/cssCom/004.vue'),
+            side_id : getid(),
+            side_name : '黑白文字',
+          },
         ]
       },
       //  Js
