@@ -110,7 +110,9 @@
     },
 
     data() {
-       const code =
+      return {
+      // 1
+        code: 
         `import someResource from 'codemirror/some-resource'
         export default {
           data () {
@@ -131,11 +133,7 @@
             }
           },
           components: examples
-        }`
-
-      return {
-      // 1
-        code,
+        }`,
         cmOption: {
           tabSize: 4,
           styleActiveLine: true,
