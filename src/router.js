@@ -91,7 +91,7 @@ export const ROUTES = [
             name : 'js002',
             component : () => import('./components/jsCom/002.vue'),
             side_id : getid(),
-            side_name : 'JS样式2',
+            side_name : '代码展示',
           },
         ]
       },
