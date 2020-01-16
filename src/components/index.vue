@@ -35,7 +35,7 @@
     ],
 
     created(){
-      this.loadfont()
+      // this.loadfont()
     },
 
     watch:{
