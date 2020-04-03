@@ -83,6 +83,7 @@
       id="his"
       :title="his_title"
       :show-close="false"
+      top="6vh"
       center
       :visible.sync="dialoghis">
       <center>

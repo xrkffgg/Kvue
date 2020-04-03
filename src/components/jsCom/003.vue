@@ -3,21 +3,22 @@
     <div class="main-title">Excel Demo</div>
     <div class="main-title-time num">2020-04-03</div>
     <div class="main-title-tip">
-      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，若有 Bug，请谅解，也可在 https://github.com/xrkffgg/Kvue/issues 提出来。目录 src/assets/excel 有一个待上传的 excel 例子。
+      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，略粗糙，若有 Bug，请谅解，也可在 https://github.com/xrkffgg/Kvue/issues 提出来。可点击下载 Demo Excel，若因网络问题，可在目录 src/assets/excel 中查看。导出的 Excel 会自动下载到浏览器默认的下载地址中。
     </div>
     <div class="main-content">
-      <el-tag>导入</el-tag>
-      <el-upload
-        action=""
-        style="margin-top:-32px; margin-left: 100px;"
-        :on-change="handleChange"
-        :file-list="fileListUpload"
-        limit="1"
-        accept=".xls,.xlsx"
-        :auto-upload="false">
-        <el-button :loading="disbtn" size="small" type="primary" icon="el-icon-upload2" >点击上传</el-button>
-        <div slot="tip" class="el-upload__tip">只 能 上 传 xlsx / xls 文 件</div>
-      </el-upload>
+      <div style="display: flex; width: 340px; justify-content: space-between;">
+        <el-button type="primary" plain size="small" @click="doDown">下载 Excel</el-button>
+        <el-upload
+          action=""
+          :on-change="handleChange"
+          :file-list="fileListUpload"
+          :show-file-list="false"
+          accept=".xls,.xlsx"
+          :auto-upload="false">
+          <el-button :loading="disbtn" size="small" type="primary">上传 Excel</el-button>
+        </el-upload>
+        <el-button  type="success" plain :loading="disbtn" size="small"  @click="doOut">导出 Excel</el-button>
+      </div>
       <el-table
         :data="list"
         stripe
@@ -51,6 +52,11 @@ export default {
   },
 
   methods: {
+    doDown(){
+      let url = 'https://raw.githubusercontent.com/xrkffgg/Kvue/master/src/assets/excel/demo.xlsx'
+      window.location.href = url
+    },
+
     // 上传附件
     handleChange (file, fileList) {
       this.fileTemp = file.raw
@@ -120,6 +126,30 @@ export default {
       } else {
         reader.readAsBinaryString(f)
       }
+    },
+
+    // out
+    doOut(){
+      this.disbtn = true
+      this.getExcel(this.list)
+    },
+
+    //  数组导入Excel
+    getExcel(arr) { 　　　　　　
+      require.ensure([], () => {
+        // 这里 require 的地址指向你项目中 Export2Excel.js 文件存放地址
+        const { export_json_to_excel } = require('../../js/Export2Excel.js')
+        const tHeader = ['名字', '年龄']
+        const filterVal = ['name', 'age']
+        const list = arr
+        const data = this.formatJson(filterVal, list)
+        export_json_to_excel(tHeader, data, '奥力给')
+        this.disbtn = false
+      })
+    },
+
+    formatJson(filterVal, jsonData) {
+      return jsonData.map(v => filterVal.map(j => v[j]))
     },
   },
 }
