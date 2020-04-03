@@ -93,6 +93,13 @@ export const ROUTES = [
             side_id: getid(),
             side_name: '代码展示',
           },
+          {
+            path: '003',
+            name: 'js003',
+            component: () => import('./components/jsCom/003.vue'),
+            side_id: getid(),
+            side_name: 'Excel Demo',
+          },
         ]
       },
       // UI

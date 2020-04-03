@@ -15,22 +15,24 @@
     "createjs": "^1.0.1",
     "echarts": "^4.2.1",
     "element-ui": "^2.11.0",
+    "file-saver": "^2.0.2",
     "fontfaceobserver": "^2.1.0",
     "pug": "^2.0.4",
     "pug-html-loader": "^1.1.5",
     "pug-plain-loader": "^1.0.0",
-    "script-loader": "^0.7.2",
     "vue": "^2.6.10",
     "vue-baidu-map": "^0.21.20",
     "vue-codemirror": "^4.0.6",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "xlsx": "^0.15.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-service": "^3.9.3",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "script-loader": "^0.7.2",
     "vue-template-compiler": "^2.5.21"
   },
   "postcss": {
