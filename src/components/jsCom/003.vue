@@ -3,7 +3,7 @@
     <div class="main-title">Excel Demo</div>
     <div class="main-title-time num">2020-04-03</div>
     <div class="main-title-tip">
-      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，略粗糙，若有 Bug，请谅解，也可在 https://github.com/xrkffgg/Kvue/issues 提出来。可点击下载 Demo Excel，若因网络问题，可在目录 src/assets/excel 中查看。导出的 Excel 会自动下载到浏览器默认的下载地址中。
+      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，略粗糙，若有 Bug，请谅解，也可在 https://github.com/xrkffgg/Kvue/issues 提出来。可点击下载 Demo Excel，若因网络问题，可在目录 src/assets/excel 中查看。导出的 Excel 会自动下载到浏览器默认的下载地址中。引入 2 个 JS 文件，最新的查看 https://github.com/xrkffgg/Ktools/tree/master/JS/002.Excel
     </div>
     <div class="main-content">
       <div style="display: flex; width: 340px; justify-content: space-between;">

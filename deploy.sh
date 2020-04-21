@@ -1,4 +1,8 @@
 set -e
+git add -A
+git commit -m 'auto: push'
+git push origin master
+
 yarn build
 
 cd ..
