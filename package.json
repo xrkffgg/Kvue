@@ -23,6 +23,7 @@
     "vue": "^2.6.10",
     "vue-baidu-map": "^0.21.20",
     "vue-codemirror": "^4.0.6",
+    "vue-drag-resize": "^1.3.2",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1",
     "xlsx": "^0.15.6"

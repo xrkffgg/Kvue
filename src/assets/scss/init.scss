@@ -57,6 +57,9 @@ input[type="number"]{
 // common
 @import './common.scss';
 
+// shake
+@import './csshake.css';
+
 *::after{
   clear: both;
 }

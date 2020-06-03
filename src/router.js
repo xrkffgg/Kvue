@@ -100,6 +100,13 @@ export const ROUTES = [
             side_id: getid(),
             side_name: 'Excel Demo',
           },
+          {
+            path: '004',
+            name: 'js004',
+            component: () => import('./components/jsCom/004.vue'),
+            side_id: getid(),
+            side_name: 'Drag resize Demo',
+          },
         ]
       },
       // UI
