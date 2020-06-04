@@ -14,55 +14,75 @@
         {{ !isDraggable ? '开 启' : '关 闭' }}
       </el-button>
       <div class="xyshow">
-        x:{{x}} y:{{y}}
+        x:{{x}} y:{{y}} w:{{w}} h:{{h}}
       </div>
 
       <div :class="isDraggable ? 'isdrag': ''">
         <VueDragResize
+          :w="btn.w1"
+          :h="btn.h1"
           :x="btn.x1"
           :y="btn.y1"
-          :isResizable="false"
+          :isResizable="isDraggable"
           :isDraggable="isDraggable"
-          @dragging="resize">
+          @resizing="resize1"
+          @dragging="resize1">
           <div :class="isDraggable ? 'shake shake-constant hover-stop' : ''">
-            <el-button>春天的风</el-button>
+            <div
+              id="btn-1"
+              class="b1">
+              春天的风
+            </div>
           </div>
         </VueDragResize>
 
         <VueDragResize 
+          :w="btn.w2"
+          :h="btn.h2"
           :x="btn.x2"
           :y="btn.y2"
-          :isResizable="false"
+          :isResizable="isDraggable"
           :isDraggable="isDraggable"
-          @dragging="resize">
+          @resizing="resize2"
+          @dragging="resize2">
           <div :class="isDraggable ? 'shake shake-constant hover-stop' : ''">
-            <el-button>夏天的雨</el-button>
+            <div 
+              id="btn-2"
+              class="b2">
+              夏天的雨</div>
           </div>
         </VueDragResize>
 
-        <VueDragResize 
-          :w="160"
-          :h="50"
+        <VueDragResize
+          :w="btn.w3"
+          :h="btn.h3"
           :x="btn.x3"
           :y="btn.y3"
-          :isResizable="false"
+          :isResizable="isDraggable"
           :isDraggable="isDraggable"
-          @dragging="resize">
+          @resizing="resize3"
+          @dragging="resize3">
           <div :class="isDraggable ? 'shake shake-constant hover-stop' : ''">
-            <el-button>秋天的月</el-button>
+            <div 
+              id="btn-3"
+              class="b3">
+              秋天的月</div>
           </div>
         </VueDragResize>
 
-        <VueDragResize 
-          :w="160"
-          :h="50"
+        <VueDragResize
+          :w="btn.w4"
+          :h="btn.h4"
           :x="btn.x4"
           :y="btn.y4"
-          :isResizable="false"
+          :isResizable="isDraggable"
           :isDraggable="isDraggable"
-          @dragging="resize">
+          @resizing="resize4"
+          @dragging="resize4">
           <div :class="isDraggable ? 'shake shake-constant hover-stop' : ''">
-            <el-button>冬天的雪</el-button>
+            <div 
+              id="btn-4"
+              class="b4">冬天的雪</div>
           </div>
         </VueDragResize>
       </div>
@@ -102,17 +122,27 @@
         btn: {
           x1: 300,
           y1: 300,
-          x2: 350,
-          y2: 350,
-          x3: 400,
-          y3: 400,
+          x2: 250,
+          y2: 450,
+          x3: 500,
+          y3: 300,
           x4: 450,
           y4: 450,
+          w1: 160,
+          h1: 80,
+          w2: 160,
+          h2: 80,
+          w3: 160,
+          h3: 80,
+          w4: 160,
+          h4: 80,
         },
         //页面使用数据
         isDraggable: false,
         x: '',
         y: '',
+        w: '',
+        h: '',
         //码表
 
         //js使用数据
@@ -125,15 +155,33 @@
     },
 
     methods: {
-      resize(newRect) {
+      resize(n,newRect) {
         this.x = newRect.left
         this.y = newRect.top
-      }
+        this.w = newRect.width
+        this.h = newRect.height
+
+        let d = document.getElementById(`btn-${n}`)
+        d.setAttribute('style', `width: ${newRect.width}px; height: ${newRect.height}px`)
+      },
+
+      resize1(newRect){
+        this.resize(1, newRect)
+      },
+      resize2(newRect){
+        this.resize(2, newRect)
+      },
+      resize3(newRect){
+        this.resize(3, newRect)
+      },
+      resize4(newRect){
+        this.resize(4, newRect)
+      },
     }
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   .vdr.active:before {
     outline: none;
   }
@@ -144,5 +192,37 @@
   .xyshow {
     font-size: 22px;
     margin: 20px;
+  }
+
+  .b1,.b2,.b3,.b4 {
+    width: 160px;
+    height: 80px;
+    border-radius: 4px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+
+  .b1 {
+    background: linear-gradient(45deg, #72de7a 30%, #34abbf 90%);
+    box-shadow: 0 3px 5px 2px rgba(105, 255, 137, 0.3);
+  }
+
+  .b2 {
+    background: linear-gradient(45deg, #72a2de 30%, #60d8ec 90%);
+    box-shadow: 0 3px 5px 2px rgba(105, 186, 255, 0.3);
+  }
+
+  .b3 {
+    background: linear-gradient(45deg, #f3b037 30%, #de8556 90%);
+    box-shadow: 0 3px 5px 2px rgba(216, 179, 46, 0.3);
+  }
+
+  .b4 {
+    background: linear-gradient(45deg, #d4a7b1 30%, #ece8e5 90%);
+    box-shadow: 0 3px 5px 2px rgba(214, 118, 137, 0.3);
   }
 </style>

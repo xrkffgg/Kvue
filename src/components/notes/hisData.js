@@ -1,6 +1,16 @@
 const HIS = [
   //  fix opt new 修复/优化/新增
   {
+    time : '2020-06-04',
+    version : 'v0.1.1',
+    con : [
+      {
+        type : 'new',
+        text : `新增 上传导出 Drag resize Demo`
+      },
+    ],
+  },
+  {
     time : '2020-04-03',
     version : 'v0.1.0',
     con : [
