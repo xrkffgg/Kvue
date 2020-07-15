@@ -1,15 +1,28 @@
+# @source: https://github.com/xrkffgg/gitignore/blob/master/.gitignore
+
+# Normal
 .DS_Store
 node_modules
+/dist
+.sass-cache/
 /Kvue
+
+# Lock
+yarn.lock
+package-lock.json
 
 # local env files
 .env.local
 .env.*.local
 
-yarn.lock
-package-lock.json
+# Compiled file
+*.class
+*.css.map
+*.sass.map
+*.scss.map
 
-# Log files
+# Log file
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -22,3 +35,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+~$*.*

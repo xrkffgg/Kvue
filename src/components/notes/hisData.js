@@ -1,6 +1,16 @@
 const HIS = [
   //  fix opt new 修复/优化/新增
   {
+    time : '2020-07-15',
+    version : 'v0.1.2',
+    con : [
+      {
+        type : 'new',
+        text : `新增 摄像头 Demo`
+      },
+    ],
+  },
+  {
     time : '2020-06-04',
     version : 'v0.1.1',
     con : [

@@ -13,7 +13,7 @@
       <a class="headmenu inline cur-pointer" @click="doGoHost">首 页</a>
       <a class="headmenu inline cur-pointer" @click="doGoHome">Home</a>
       <a class="headmenu inline cur-pointer" @click="doGoGit">Github</a>
-      <a class="headtime num inline">{{ nowDate }}</a>
+      <a class="headtime inline">{{ nowDate }}</a>
     </div>
   </div>
 </template>

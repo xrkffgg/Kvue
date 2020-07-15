@@ -16,6 +16,10 @@ export default {
       window.open('https://github.com/xrkffgg')
     },
 
+    doGoTwiiter(){
+      window.open('https://twitter.com/xrkffgg')
+    },
+
     doGoGitIssues(){
       window.open('https://github.com/xrkffgg/Kvue/issues')
     },

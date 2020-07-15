@@ -107,6 +107,13 @@ export const ROUTES = [
             side_id: getid(),
             side_name: 'Drag resize Demo',
           },
+          {
+            path: '005',
+            name: 'js005',
+            component: () => import('./components/jsCom/005.vue'),
+            side_id: getid(),
+            side_name: '摄像头拍照',
+          },
         ]
       },
       // UI

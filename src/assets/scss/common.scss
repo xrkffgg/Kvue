@@ -132,6 +132,7 @@ $hover--color : #A4D3EE;
 
     .headtime {
       font-size: 1rem !important;
+      font-weight: bold;
       letter-spacing: 1px;
     }
 
@@ -250,6 +251,13 @@ $sidebar--footer--height : 90px;
       height: 36px;
       opacity: .7;
       background-image: url('../jpg/github.png')
+    }
+
+    .follow-twiiter {
+      width: 36px;
+      height: 36px;
+      opacity: .7;
+      background-image: url('../jpg/twiiter.png')
     }
 
     .follow-jue {
@@ -593,7 +601,6 @@ $home--card--block--width : 20px;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         &:hover{
-          font-size: 0.9rem;
           text-shadow: #000000 0 0 1px;
         }
       }

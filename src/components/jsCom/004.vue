@@ -6,7 +6,7 @@
     <div class="main-title-tip">
       项目中引用的 csshake 为简版，完整版请查看 <a target="_blank" href="https://github.com/xrkffgg/Ktools/blob/master/CSS/csshake.css">https://github.com/xrkffgg/Ktools/blob/master/CSS/csshake.css</a>
     </div>
-    <div class="main-content" >
+    <div class="main-content">
       <el-button
         type="primary"
         style="width: 200px;"
