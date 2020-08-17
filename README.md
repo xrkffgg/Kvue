@@ -23,10 +23,46 @@
 > ### 😅 **欢 迎 参 阅 指 导**
 > ### 📃 **旨 在 娱 乐 分 享**
 
+## 🌈 功能列表
+- Home
+  - iframe 魔方 Game
+  - 项目记录
+  - 关于作者 
+- CSS
+  - 水纹效果
+  - 动画样式
+    - 图片旋转
+    - 播放按钮
+    - 融合粘滞
+  - 炫酷文字
+    - 彩虹文字
+    - 打字效果
+  - 黑白文字
+- JS
+  - 数字转千分
+  - CodeMirror
+  - Excel Demo
+  - Drag rezise Demo
+  - 摄像头拍照
+- UI
+  - 表格滚动
+  - 自定义按钮 (忘记是要干啥了，半成品)
+  - 表格合并
+    - 数据合并
+    - 表头颜色
+- Canvas
+  - 图片颜色
+    - 彩色/黑白
+    - 反向
+- Echarts (跟着官网就能做，回头补一点看看)
+- EaselJS
+  - GlobalToLocal2 
+
 ## 项目启动
 ```
 npm run dev || yarn dev
 ```
+
 ## 说明 📃
 
 1. 低版本浏览器不支持！
@@ -35,7 +71,6 @@ npm run dev || yarn dev
 4. UI: Element-ui
 5. 关于页：https://github.com/dongsuo/vue-terminal
 6. 有任何建议或指导请点击 [【issues】](https://github.com/xrkffgg/Kvue/issues/new)
-
 
 ## 声明 📖
 
