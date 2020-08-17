@@ -140,6 +140,13 @@ export const ROUTES = [
             side_id: getid(),
             side_name: '自定义按钮',
           },
+          {
+            path: '003',
+            name: 'ui003',
+            component: () => import('./components/uiCom/003.vue'),
+            side_id: getid(),
+            side_name: '表格合并',
+          },
         ]
       },
       // 
