@@ -66,7 +66,7 @@ npm run dev || yarn dev
 ## 说明 📃
 
 1. 低版本浏览器不支持！
-2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`，首次字体加载略慢，见谅！
+2. 页面中汉字使用的是`SourceHanSans-Regular`，英文和数字使用的是`Roboto-Thin`，首次字体加载略慢，见谅！(已移除！)
 3. 由于目前技术和时间有限，未添加多分辨率视频！
 4. UI: Element-ui
 5. 关于页：https://github.com/dongsuo/vue-terminal
