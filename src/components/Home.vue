@@ -9,13 +9,13 @@
         v-for="ima in imas"
         :key="ima.id"
         @click="gotab(ima.url)"
-        class="onetab cur-pointer">
+        class="onetab">
         <img :id="ima.id" :src="ima.src" />
       </div>
-      <div class="onetab cur-pointer" @click="doo('vx')">
+      <div class="onetab" @click="doo('vx')">
         <img id="ima9" src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-%E5%90%91TA%E5%85%B3%E7%88%B1-brightgreen.svg?style=flat-square">
       </div>
-      <div class="onetab cur-pointer" @click="doo('zfb')">
+      <div class="onetab" @click="doo('zfb')">
         <img id="ima10" src="https://img.shields.io/badge/%E6%94%AF%E4%BB%98%E5%AE%9D-%E5%90%91TA%E5%85%B3%E7%88%B1-blue.svg?style=flat-square">
       </div>
     </div>
@@ -46,18 +46,18 @@
     <div class="homeaboutbox">
       <div class="aboutcon">
         <div class="card">
-          <div class="cardfont cur-pointer" @click="showhis">项目记录</div>
+          <div class="cardfont" @click="showhis">项目记录</div>
         </div>
         <div class="card">
-          <div class="cardfont cur-pointer" @click="doGoGitIssues">意见建议</div>
+          <div class="cardfont" @click="doGoGitIssues">意见建议</div>
         </div>
         <div class="card">
-          <div class="cardfont cur-pointer" @click="showme">关于作者</div>
+          <div class="cardfont" @click="showme">关于作者</div>
         </div>
       </div>
       <div class="copybox">
         <div class="num copy">
-          ©&nbsp;&nbsp;{{$store.state.copy_year}}&nbsp;&nbsp;<a class="copyname cur-pointer" @click="doGoGit">xrkffgg</a>
+          ©&nbsp;&nbsp;{{$store.state.copy_year}}&nbsp;&nbsp;<a class="copyname" @click="doGoGit">xrkffgg</a>
         </div>
       </div>
     </div>

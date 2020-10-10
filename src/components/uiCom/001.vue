@@ -1,7 +1,7 @@
 <template>
   <div id="ui001">
     <div class="main-title">Eleme Table</div>
-    <div class="main-title-time num">2019-08-15</div>
+    <div class="main-title-time ">2019-08-15</div>
 
     <div class="box">
       <el-table

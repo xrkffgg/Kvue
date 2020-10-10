@@ -4,10 +4,10 @@
       <div id="avatarId" class="box-circle">
         <div id="fillId" class="fill"></div>
       </div>
-      <div class="box-font num cur-pointer" @click="doGoGitUser">
+      <div class="box-font " @click="doGoGitUser">
         xrkffgg
       </div>
-      <div class="box-sign num">
+      <div class="box-sign ">
         Tenacity & Brave & Love
       </div>
     </div>
@@ -40,19 +40,19 @@
     </el-menu>
 
     <div class="sidefooter">
-      <div class="fotter-follow num">Follow <div style="color:red;display:inline;">me</div> at</div>
+      <div class="fotter-follow ">Follow <div style="color:red;display:inline;">me</div> at</div>
       <el-row type="flex" justify="space-around" style="margin-top:10px;">
         <el-col :span="5" :offset="1">
-          <div class="follow follow-git cur-pointer" @click="doGoGitUser"></div>
+          <div class="follow follow-git" @click="doGoGitUser"></div>
         </el-col>
         <el-col :span="5">
-          <div class="follow follow-twiiter cur-pointer" @click="doGoTwiiter"></div>
+          <div class="follow follow-twiiter" @click="doGoTwiiter"></div>
         </el-col>
         <el-col :span="5">
-          <div class="follow follow-jue cur-pointer" @click="doGoJuejin">掘</div>
+          <div class="follow follow-jue" @click="doGoJuejin">掘</div>
         </el-col>
         <el-col :span="5">
-          <div class="follow follow-jian cur-pointer" @click="doGoJianshu">简</div>
+          <div class="follow follow-jian" @click="doGoJianshu">简</div>
         </el-col>
       </el-row>
     </div>

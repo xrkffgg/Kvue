@@ -2,7 +2,7 @@
 <template>
   <div id="js004">
     <div class="main-title">Drag rezise Demo</div>
-    <div class="main-title-time num">2020-06-03</div>
+    <div class="main-title-time ">2020-06-03</div>
     <div class="main-title-tip">
       项目中引用的 csshake 为简版，完整版请查看 <a target="_blank" href="https://github.com/xrkffgg/Ktools/blob/master/CSS/csshake.css">https://github.com/xrkffgg/Ktools/blob/master/CSS/csshake.css</a>
     </div>

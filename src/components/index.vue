@@ -1,5 +1,5 @@
 <template>
-  <div id="index" v-loading="loading" class="cur-default">
+  <div id="index" v-loading="loading">
     <div class="header">
       <header-com></header-com>
     </div>

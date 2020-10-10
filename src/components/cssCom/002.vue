@@ -4,7 +4,7 @@
     <div class="main-content">
       <el-tabs tab-position="left">
         <el-tab-pane label="图片旋转">
-          <div class="main-title-time num">2019-05-16</div>
+          <div class="main-title-time ">2019-05-16</div>
           <el-row :gutter="30">
             <el-col :span="8">
               <div class="tag">
@@ -56,7 +56,7 @@
           
         </el-tab-pane>
         <el-tab-pane label="播放按钮">
-          <div class="main-title-time num">2019-09-19</div>
+          <div class="main-title-time ">2019-09-19</div>
           <div class="css-show-box">
             <label>
               <input type="checkbox" id="status" />
@@ -70,7 +70,7 @@
         </el-tab-pane>
 
         <el-tab-pane label="融合粘滞效果">
-          <div class="main-title-time num">2019-09-23</div>
+          <div class="main-title-time ">2019-09-23</div>
           <div class="css-show-box black">
             <div class="box3 box-1"></div>
             <div class="box3 box-2"></div>

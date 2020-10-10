@@ -1,7 +1,7 @@
 <template>
   <div id="easeljs001">
     <div class="main-title">GlobalToLocal2</div>
-    <div class="main-title-time num">2019-05-29</div>
+    <div class="main-title-time ">2019-05-29</div>
     <div class="main-title-tip">
       Follow the example GlobalToLocal2 of the EaselJS.<br/>
       URL: https://github.com/CreateJS/EaselJS/blob/master/examples/GlobalToLocal2.html<br/>

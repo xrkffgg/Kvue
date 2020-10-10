@@ -1,7 +1,7 @@
 <template>
   <div id="canvas001">
     <div class="main-title">canvas picture</div>
-    <div class="main-title-time num">2019-08-15</div>
+    <div class="main-title-time ">2019-08-15</div>
 
     <div class="box">
       <canvas id="canvas01" width="400" height="400"></canvas>

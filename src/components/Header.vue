@@ -1,19 +1,19 @@
 <template>
   <div id="headercom">
     <div class="title inline">
-      <div class="title1 num inline cur-pointer" @click="doGoHome">
+      <div class="title1  inline" @click="doGoHome">
         <a>Kvue</a>
       </div>
-      <div class="title2 num inline cur-pointer" @click="doGoGitUser">
+      <div class="title2  inline" @click="doGoGitUser">
         <a>by xrkffgg</a>
       </div>
     </div>
     
     <div class="tab inline">
-      <a class="headmenu inline cur-pointer" @click="doGoHost">首 页</a>
-      <a class="headmenu inline cur-pointer" @click="doGoHome">Home</a>
-      <a class="headmenu inline cur-pointer" @click="doGoGit">Github</a>
-      <a class="headtime inline">{{ nowDate }}</a>
+      <a class="headmenu inline" @click="doGoHost">首 页</a>
+      <a class="headmenu inline " @click="doGoHome">Home</a>
+      <a class="headmenu inline " @click="doGoGit">Github</a>
+      <a class="headtime inline  ">{{ nowDate }}</a>
     </div>
   </div>
 </template>

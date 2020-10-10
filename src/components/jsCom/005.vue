@@ -1,7 +1,7 @@
 <template>
   <div id="js005">
     <div class="main-title">摄像头拍照</div>
-    <div class="main-title-time num">2020-07-15</div>
+    <div class="main-title-time ">2020-07-15</div>
     <div class="main-title-tip">
       Vue 调取 自身摄像头 或 外接 USB 摄像头，生成 截图 和 Base 64。
     </div>

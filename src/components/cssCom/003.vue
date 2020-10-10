@@ -6,13 +6,13 @@
         
         <!-- 2 -->
         <el-tab-pane label="彩虹文字">
-          <div class="main-title-time num">2019-09-19</div>
+          <div class="main-title-time ">2019-09-19</div>
           <div class="flow-slogon">动感超人</div>
         </el-tab-pane>
 
         <!-- 3 -->
         <el-tab-pane label="打字效果">
-          <div class="main-title-time num">2019-09-23</div>
+          <div class="main-title-time ">2019-09-23</div>
           <p class="typing">简易中文打字效果，作者：张鑫旭</p>
         </el-tab-pane>
       </el-tabs>

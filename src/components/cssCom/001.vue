@@ -1,7 +1,7 @@
 <template>
   <div id="css001">
     <div class="main-title">水纹效果</div>
-    <div class="main-title-time num">2019-09-18</div>
+    <div class="main-title-time ">2019-09-18</div>
     <div class="main-title-tip">
       参 考：<el-link href="https://www.zhangxinxu.com/wordpress/2017/12/understand-svg-fedisplacementmap-filter/" target="_blank">张鑫旭</el-link> 
     </div>

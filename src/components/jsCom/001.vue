@@ -1,7 +1,7 @@
 <template>
   <div id="js001">
     <div class="main-title">数字转千分</div>
-    <div class="main-title-time num">2019-09-18</div>
+    <div class="main-title-time ">2019-09-18</div>
     <div class="main-title-tip">
       各有优缺
     </div>

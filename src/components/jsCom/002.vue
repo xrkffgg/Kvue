@@ -4,7 +4,7 @@
     <div class="main-content">
       <el-tabs tab-position="left">
         <el-tab-pane label="Vue-Codemirror">
-          <div class="main-title-time num">2019-09-25</div>
+          <div class="main-title-time ">2019-09-25</div>
           <div class="main-title-tip">
             https://surmon-china.github.io/vue-codemirror/
           </div>
@@ -17,7 +17,7 @@
         </el-tab-pane>
 
         <el-tab-pane label="codemirror">
-          <div class="main-title-time num">2019-09-25</div>
+          <div class="main-title-time ">2019-09-25</div>
           <div class="main-title-tip">
             https://github.com/codemirror/CodeMirror<br/>
             这2个 组件样式有些影响，不要一起使用

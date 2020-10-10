@@ -1,7 +1,7 @@
 <template>
   <div id="ui003">
     <div class="main-title">Table Merge Demo</div>
-    <div class="main-title-time num">2020-08-17</div>
+    <div class="main-title-time ">2020-08-17</div>
     <el-divider />
     <el-row style="margin-top: 20px;">
       <el-col :span="20" :offset="2">

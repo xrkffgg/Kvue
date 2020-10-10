@@ -1,7 +1,7 @@
 <template>
   <div id="css004">
     <div class="main-title">炫酷文字</div>
-    <div class="main-title-time num">2019-09-19</div>
+    <div class="main-title-time ">2019-09-19</div>
     <div class="main-content">
       <div class="box">
         <h1>是你的网络有问题。</h1>
