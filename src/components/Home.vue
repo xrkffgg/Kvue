@@ -26,7 +26,7 @@
           <iframe
             id="3dcube"
             v-show="!loading"
-            src="https://xrkffgg.github.io/3dcube/" 
+            src="https://zoo-js.github.io/3dcube/?red=cat&white=dog&blue=pig&green=sheep&orange=koala&yellow=ant" 
             name="3dcube"
             width="100%"
             height="100%"
