@@ -14,7 +14,7 @@ script:
 
 deploy:
   provider: pages
-  skip_cleanup: false
+  skip_cleanup: true
   github_token: $TRAVIS_TOKEN_KEY
   local_dir: Kvue
   on:
