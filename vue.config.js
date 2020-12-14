@@ -48,7 +48,7 @@ module.exports = {
   outputDir: 'Kvue',
   productionSourceMap: false,
   assetsDir: 'assets',
-  publicPath: process.env.NODE_ENV === 'production' ? './Kvue' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   devServer: {
     open: true,
     overlay: {
