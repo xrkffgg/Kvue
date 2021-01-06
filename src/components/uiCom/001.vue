@@ -26,7 +26,6 @@
 
 <script>
   import dateMix from '@/mixins/date.js'
-  import axios from 'axios'
   export default {
     name : 'ui001',
     mixins : [dateMix,],
