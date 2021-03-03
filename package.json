@@ -16,7 +16,7 @@
     "element-ui": "2.13.2",
     "file-saver": "2.0.2",
     "fontfaceobserver": "2.1.0",
-    "pug": "2.0.4",
+    "pug": "3.0.1",
     "pug-html-loader": "1.1.5",
     "pug-plain-loader": "1.0.0",
     "vue": "2.6.11",
