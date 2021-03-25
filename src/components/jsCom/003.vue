@@ -3,8 +3,8 @@
     <div class="main-title">Excel Demo</div>
     <div class="main-title-time ">2020-04-03</div>
     <div class="main-title-tip">
-      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，略粗糙，若有 Bug，请谅解，也可在 
-      <a target="_blank" href="https://github.com/xrkffgg/Kvue/issues">https://github.com/xrkffgg/Kvue/issues</a> 提出来。可点击下载 Demo Excel，若因网络问题，可在目录 src/assets/excel 中查看。导出的 Excel 会自动下载到浏览器默认的下载地址中。引入 2 个 JS 文件，最新的查看 
+      应好多小伙伴的要求，先增加一个小 Demo。该 Demo 仅用于展示功能，略粗糙，若有 Bug，请谅解，也可在
+      <a target="_blank" href="https://github.com/xrkffgg/Kvue/issues">https://github.com/xrkffgg/Kvue/issues</a> 提出来。可点击下载 Demo Excel，若因网络问题，可在目录 src/assets/excel 中查看。导出的 Excel 会自动下载到浏览器默认的下载地址中。引入 2 个 JS 文件，最新的查看
       <a target="_blank" href="https://github.com/xrkffgg/Ktools/tree/master/JS/002.Excel">https://github.com/xrkffgg/Ktools/tree/master/JS/002.Excel</a>
     </div>
     <div class="main-content">
@@ -132,6 +132,9 @@ export default {
 
     // out
     doOut(){
+      if (this.list.length == 0) {
+        return this.$message.error('空数组！')
+      }
       this.disbtn = true
       this.getExcel(this.list)
     },
